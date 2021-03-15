@@ -1,0 +1,1808 @@
+﻿<Page
+    x:Class="Conglomo.AudioBible.SelectFile"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Conglomo.AudioBible"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Pivot Title="Audio Bible" Name="MainPivot">
+        <PivotItem Header="Genesis">
+            <ListView ItemClick="ListView_ItemClick" IsItemClickEnabled="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding}" Style="{ThemeResource ListViewItemTextBlockStyle}" Margin="0,0,0,19" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+                <x:String>Chapter 1</x:String>
+                <x:String>Chapter 2</x:String>
+                <x:String>Chapter 3</x:String>
+                <x:String>Chapter 4</x:String>
+                <x:String>Chapter 5</x:String>
+                <x:String>Chapter 6</x:String>
+                <x:String>Chapter 7</x:String>
+                <x:String>Chapter 8</x:String>
+                <x:String>Chapter 9</x:String>
+                <x:String>Chapter 10</x:String>
+                <x:String>Chapter 11</x:String>
+                <x:String>Chapter 12</x:String>
+                <x:String>Chapter 13</x:String>
+                <x:String>Chapter 14</x:String>
+                <x:String>Chapter 15</x:String>
+                <x:String>Chapter 16</x:String>
+                <x:String>Chapter 17</x:String>
+                <x:String>Chapter 18</x:String>
+                <x:String>Chapter 19</x:String>
+                <x:String>Chapter 20</x:String>
+                <x:String>Chapter 21</x:String>
+                <x:String>Chapter 22</x:String>
+                <x:String>Chapter 23</x:String>
+                <x:String>Chapter 24</x:String>
+                <x:String>Chapter 25</x:String>
+                <x:String>Chapter 26</x:String>
+                <x:String>Chapter 27</x:String>
+                <x:String>Chapter 28</x:String>
+                <x:String>Chapter 29</x:String>
+                <x:String>Chapter 30</x:String>
+                <x:String>Chapter 31</x:String>
+                <x:String>Chapter 32</x:String>
+                <x:String>Chapter 33</x:String>
+                <x:String>Chapter 34</x:String>
+                <x:String>Chapter 35</x:String>
+                <x:String>Chapter 36</x:String>
+                <x:String>Chapter 37</x:String>
+                <x:String>Chapter 38</x:String>
+                <x:String>Chapter 39</x:String>
+                <x:String>Chapter 40</x:String>
+                <x:String>Chapter 41</x:String>
+                <x:String>Chapter 42</x:String>
+                <x:String>Chapter 43</x:String>
+                <x:String>Chapter 44</x:String>
+                <x:String>Chapter 45</x:String>
+                <x:String>Chapter 46</x:String>
+                <x:String>Chapter 47</x:String>
+                <x:String>Chapter 48</x:String>
+                <x:String>Chapter 49</x:String>
+                <x:String>Chapter 50</x:String>
+            </ListView>
+        </PivotItem>
+        <PivotItem Header="Exodus">
+            <ListView ItemClick="ListView_ItemClick" IsItemClickEnabled="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding}" Style="{ThemeResource ListViewItemTextBlockStyle}" Margin="0,0,0,19" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+                <x:String>Chapter 1</x:String>
+                <x:String>Chapter 2</x:String>
+                <x:String>Chapter 3</x:String>
+                <x:String>Chapter 4</x:String>
+                <x:String>Chapter 5</x:String>
+                <x:String>Chapter 6</x:String>
+                <x:String>Chapter 7</x:String>
+                <x:String>Chapter 8</x:String>
+                <x:String>Chapter 9</x:String>
+                <x:String>Chapter 10</x:String>
+                <x:String>Chapter 11</x:String>
+                <x:String>Chapter 12</x:String>
+                <x:String>Chapter 13</x:String>
+                <x:String>Chapter 14</x:String>
+                <x:String>Chapter 15</x:String>
+                <x:String>Chapter 16</x:String>
+                <x:String>Chapter 17</x:String>
+                <x:String>Chapter 18</x:String>
+                <x:String>Chapter 19</x:String>
+                <x:String>Chapter 20</x:String>
+                <x:String>Chapter 21</x:String>
+                <x:String>Chapter 22</x:String>
+                <x:String>Chapter 23</x:String>
+                <x:String>Chapter 24</x:String>
+                <x:String>Chapter 25</x:String>
+                <x:String>Chapter 26</x:String>
+                <x:String>Chapter 27</x:String>
+                <x:String>Chapter 28</x:String>
+                <x:String>Chapter 29</x:String>
+                <x:String>Chapter 30</x:String>
+                <x:String>Chapter 31</x:String>
+                <x:String>Chapter 32</x:String>
+                <x:String>Chapter 33</x:String>
+                <x:String>Chapter 34</x:String>
+                <x:String>Chapter 35</x:String>
+                <x:String>Chapter 36</x:String>
+                <x:String>Chapter 37</x:String>
+                <x:String>Chapter 38</x:String>
+                <x:String>Chapter 39</x:String>
+                <x:String>Chapter 40</x:String>
+            </ListView>
+        </PivotItem>
+        <PivotItem Header="Leviticus">
+            <ListView ItemClick="ListView_ItemClick" IsItemClickEnabled="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding}" Style="{ThemeResource ListViewItemTextBlockStyle}" Margin="0,0,0,19" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+                <x:String>Chapter 1</x:String>
+                <x:String>Chapter 2</x:String>
+                <x:String>Chapter 3</x:String>
+                <x:String>Chapter 4</x:String>
+                <x:String>Chapter 5</x:String>
+                <x:String>Chapter 6</x:String>
+                <x:String>Chapter 7</x:String>
+                <x:String>Chapter 8</x:String>
+                <x:String>Chapter 9</x:String>
+                <x:String>Chapter 10</x:String>
+                <x:String>Chapter 11</x:String>
+                <x:String>Chapter 12</x:String>
+                <x:String>Chapter 13</x:String>
+                <x:String>Chapter 14</x:String>
+                <x:String>Chapter 15</x:String>
+                <x:String>Chapter 16</x:String>
+                <x:String>Chapter 17</x:String>
+                <x:String>Chapter 18</x:String>
+                <x:String>Chapter 19</x:String>
+                <x:String>Chapter 20</x:String>
+                <x:String>Chapter 21</x:String>
+                <x:String>Chapter 22</x:String>
+                <x:String>Chapter 23</x:String>
+                <x:String>Chapter 24</x:String>
+                <x:String>Chapter 25</x:String>
+                <x:String>Chapter 26</x:String>
+                <x:String>Chapter 27</x:String>
+            </ListView>
+        </PivotItem>
+        <PivotItem Header="Numbers">
+            <ListView ItemClick="ListView_ItemClick" IsItemClickEnabled="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding}" Style="{ThemeResource ListViewItemTextBlockStyle}" Margin="0,0,0,19" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+                <x:String>Chapter 1</x:String>
+                <x:String>Chapter 2</x:String>
+                <x:String>Chapter 3</x:String>
+                <x:String>Chapter 4</x:String>
+                <x:String>Chapter 5</x:String>
+                <x:String>Chapter 6</x:String>
+                <x:String>Chapter 7</x:String>
+                <x:String>Chapter 8</x:String>
+                <x:String>Chapter 9</x:String>
+                <x:String>Chapter 10</x:String>
+                <x:String>Chapter 11</x:String>
+                <x:String>Chapter 12</x:String>
+                <x:String>Chapter 13</x:String>
+                <x:String>Chapter 14</x:String>
+                <x:String>Chapter 15</x:String>
+                <x:String>Chapter 16</x:String>
+                <x:String>Chapter 17</x:String>
+                <x:String>Chapter 18</x:String>
+                <x:String>Chapter 19</x:String>
+                <x:String>Chapter 20</x:String>
+                <x:String>Chapter 21</x:String>
+                <x:String>Chapter 22</x:String>
+                <x:String>Chapter 23</x:String>
+                <x:String>Chapter 24</x:String>
+                <x:String>Chapter 25</x:String>
+                <x:String>Chapter 26</x:String>
+                <x:String>Chapter 27</x:String>
+                <x:String>Chapter 28</x:String>
+                <x:String>Chapter 29</x:String>
+                <x:String>Chapter 30</x:String>
+                <x:String>Chapter 31</x:String>
+                <x:String>Chapter 32</x:String>
+                <x:String>Chapter 33</x:String>
+                <x:String>Chapter 34</x:String>
+                <x:String>Chapter 35</x:String>
+                <x:String>Chapter 36</x:String>
+            </ListView>
+        </PivotItem>
+        <PivotItem Header="Deuteronomy">
+            <ListView ItemClick="ListView_ItemClick" IsItemClickEnabled="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding}" Style="{ThemeResource ListViewItemTextBlockStyle}" Margin="0,0,0,19" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+                <x:String>Chapter 1</x:String>
+                <x:String>Chapter 2</x:String>
+                <x:String>Chapter 3</x:String>
+                <x:String>Chapter 4</x:String>
+                <x:String>Chapter 5</x:String>
+                <x:String>Chapter 6</x:String>
+                <x:String>Chapter 7</x:String>
+                <x:String>Chapter 8</x:String>
+                <x:String>Chapter 9</x:String>
+                <x:String>Chapter 10</x:String>
+                <x:String>Chapter 11</x:String>
+                <x:String>Chapter 12</x:String>
+                <x:String>Chapter 13</x:String>
+                <x:String>Chapter 14</x:String>
+                <x:String>Chapter 15</x:String>
+                <x:String>Chapter 16</x:String>
+                <x:String>Chapter 17</x:String>
+                <x:String>Chapter 18</x:String>
+                <x:String>Chapter 19</x:String>
+                <x:String>Chapter 20</x:String>
+                <x:String>Chapter 21</x:String>
+                <x:String>Chapter 22</x:String>
+                <x:String>Chapter 23</x:String>
+                <x:String>Chapter 24</x:String>
+                <x:String>Chapter 25</x:String>
+                <x:String>Chapter 26</x:String>
+                <x:String>Chapter 27</x:String>
+                <x:String>Chapter 28</x:String>
+                <x:String>Chapter 29</x:String>
+                <x:String>Chapter 30</x:String>
+                <x:String>Chapter 31</x:String>
+                <x:String>Chapter 32</x:String>
+                <x:String>Chapter 33</x:String>
+                <x:String>Chapter 34</x:String>
+            </ListView>
+        </PivotItem>
+        <PivotItem Header="Joshua">
+            <ListView ItemClick="ListView_ItemClick" IsItemClickEnabled="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding}" Style="{ThemeResource ListViewItemTextBlockStyle}" Margin="0,0,0,19" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+                <x:String>Chapter 1</x:String>
+                <x:String>Chapter 2</x:String>
+                <x:String>Chapter 3</x:String>
+                <x:String>Chapter 4</x:String>
+                <x:String>Chapter 5</x:String>
+                <x:String>Chapter 6</x:String>
+                <x:String>Chapter 7</x:String>
+                <x:String>Chapter 8</x:String>
+                <x:String>Chapter 9</x:String>
+                <x:String>Chapter 10</x:String>
+                <x:String>Chapter 11</x:String>
+                <x:String>Chapter 12</x:String>
+                <x:String>Chapter 13</x:String>
+                <x:String>Chapter 14</x:String>
+                <x:String>Chapter 15</x:String>
+                <x:String>Chapter 16</x:String>
+                <x:String>Chapter 17</x:String>
+                <x:String>Chapter 18</x:String>
+                <x:String>Chapter 19</x:String>
+                <x:String>Chapter 20</x:String>
+                <x:String>Chapter 21</x:String>
+                <x:String>Chapter 22</x:String>
+                <x:String>Chapter 23</x:String>
+                <x:String>Chapter 24</x:String>
+            </ListView>
+        </PivotItem>
+        <PivotItem Header="Judges">
+            <ListView ItemClick="ListView_ItemClick" IsItemClickEnabled="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding}" Style="{ThemeResource ListViewItemTextBlockStyle}" Margin="0,0,0,19" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+                <x:String>Chapter 1</x:String>
+                <x:String>Chapter 2</x:String>
+                <x:String>Chapter 3</x:String>
+                <x:String>Chapter 4</x:String>
+                <x:String>Chapter 5</x:String>
+                <x:String>Chapter 6</x:String>
+                <x:String>Chapter 7</x:String>
+                <x:String>Chapter 8</x:String>
+                <x:String>Chapter 9</x:String>
+                <x:String>Chapter 10</x:String>
+                <x:String>Chapter 11</x:String>
+                <x:String>Chapter 12</x:String>
+                <x:String>Chapter 13</x:String>
+                <x:String>Chapter 14</x:String>
+                <x:String>Chapter 15</x:String>
+                <x:String>Chapter 16</x:String>
+                <x:String>Chapter 17</x:String>
+                <x:String>Chapter 18</x:String>
+                <x:String>Chapter 19</x:String>
+                <x:String>Chapter 20</x:String>
+                <x:String>Chapter 21</x:String>
+            </ListView>
+        </PivotItem>
+        <PivotItem Header="Ruth">
+            <ListView ItemClick="ListView_ItemClick" IsItemClickEnabled="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding}" Style="{ThemeResource ListViewItemTextBlockStyle}" Margin="0,0,0,19" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+                <x:String>Chapter 1</x:String>
+                <x:String>Chapter 2</x:String>
+                <x:String>Chapter 3</x:String>
+                <x:String>Chapter 4</x:String>
+            </ListView>
+        </PivotItem>
+        <PivotItem Header="1 Samuel">
+            <ListView ItemClick="ListView_ItemClick" IsItemClickEnabled="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding}" Style="{ThemeResource ListViewItemTextBlockStyle}" Margin="0,0,0,19" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+                <x:String>Chapter 1</x:String>
+                <x:String>Chapter 2</x:String>
+                <x:String>Chapter 3</x:String>
+                <x:String>Chapter 4</x:String>
+                <x:String>Chapter 5</x:String>
+                <x:String>Chapter 6</x:String>
+                <x:String>Chapter 7</x:String>
+                <x:String>Chapter 8</x:String>
+                <x:String>Chapter 9</x:String>
+                <x:String>Chapter 10</x:String>
+                <x:String>Chapter 11</x:String>
+                <x:String>Chapter 12</x:String>
+                <x:String>Chapter 13</x:String>
+                <x:String>Chapter 14</x:String>
+                <x:String>Chapter 15</x:String>
+                <x:String>Chapter 16</x:String>
+                <x:String>Chapter 17</x:String>
+                <x:String>Chapter 18</x:String>
+                <x:String>Chapter 19</x:String>
+                <x:String>Chapter 20</x:String>
+                <x:String>Chapter 21</x:String>
+                <x:String>Chapter 22</x:String>
+                <x:String>Chapter 23</x:String>
+                <x:String>Chapter 24</x:String>
+                <x:String>Chapter 25</x:String>
+                <x:String>Chapter 26</x:String>
+                <x:String>Chapter 27</x:String>
+                <x:String>Chapter 28</x:String>
+                <x:String>Chapter 29</x:String>
+                <x:String>Chapter 30</x:String>
+                <x:String>Chapter 31</x:String>
+            </ListView>
+        </PivotItem>
+        <PivotItem Header="2 Samuel">
+            <ListView ItemClick="ListView_ItemClick" IsItemClickEnabled="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding}" Style="{ThemeResource ListViewItemTextBlockStyle}" Margin="0,0,0,19" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+                <x:String>Chapter 1</x:String>
+                <x:String>Chapter 2</x:String>
+                <x:String>Chapter 3</x:String>
+                <x:String>Chapter 4</x:String>
+                <x:String>Chapter 5</x:String>
+                <x:String>Chapter 6</x:String>
+                <x:String>Chapter 7</x:String>
+                <x:String>Chapter 8</x:String>
+                <x:String>Chapter 9</x:String>
+                <x:String>Chapter 10</x:String>
+                <x:String>Chapter 11</x:String>
+                <x:String>Chapter 12</x:String>
+                <x:String>Chapter 13</x:String>
+                <x:String>Chapter 14</x:String>
+                <x:String>Chapter 15</x:String>
+                <x:String>Chapter 16</x:String>
+                <x:String>Chapter 17</x:String>
+                <x:String>Chapter 18</x:String>
+                <x:String>Chapter 19</x:String>
+                <x:String>Chapter 20</x:String>
+                <x:String>Chapter 21</x:String>
+                <x:String>Chapter 22</x:String>
+                <x:String>Chapter 23</x:String>
+                <x:String>Chapter 24</x:String>
+            </ListView>
+        </PivotItem>
+        <PivotItem Header="1 Kings">
+            <ListView ItemClick="ListView_ItemClick" IsItemClickEnabled="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding}" Style="{ThemeResource ListViewItemTextBlockStyle}" Margin="0,0,0,19" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+                <x:String>Chapter 1</x:String>
+                <x:String>Chapter 2</x:String>
+                <x:String>Chapter 3</x:String>
+                <x:String>Chapter 4</x:String>
+                <x:String>Chapter 5</x:String>
+                <x:String>Chapter 6</x:String>
+                <x:String>Chapter 7</x:String>
+                <x:String>Chapter 8</x:String>
+                <x:String>Chapter 9</x:String>
+                <x:String>Chapter 10</x:String>
+                <x:String>Chapter 11</x:String>
+                <x:String>Chapter 12</x:String>
+                <x:String>Chapter 13</x:String>
+                <x:String>Chapter 14</x:String>
+                <x:String>Chapter 15</x:String>
+                <x:String>Chapter 16</x:String>
+                <x:String>Chapter 17</x:String>
+                <x:String>Chapter 18</x:String>
+                <x:String>Chapter 19</x:String>
+                <x:String>Chapter 20</x:String>
+                <x:String>Chapter 21</x:String>
+                <x:String>Chapter 22</x:String>
+            </ListView>
+        </PivotItem>
+        <PivotItem Header="2 Kings">
+            <ListView ItemClick="ListView_ItemClick" IsItemClickEnabled="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding}" Style="{ThemeResource ListViewItemTextBlockStyle}" Margin="0,0,0,19" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+                <x:String>Chapter 1</x:String>
+                <x:String>Chapter 2</x:String>
+                <x:String>Chapter 3</x:String>
+                <x:String>Chapter 4</x:String>
+                <x:String>Chapter 5</x:String>
+                <x:String>Chapter 6</x:String>
+                <x:String>Chapter 7</x:String>
+                <x:String>Chapter 8</x:String>
+                <x:String>Chapter 9</x:String>
+                <x:String>Chapter 10</x:String>
+                <x:String>Chapter 11</x:String>
+                <x:String>Chapter 12</x:String>
+                <x:String>Chapter 13</x:String>
+                <x:String>Chapter 14</x:String>
+                <x:String>Chapter 15</x:String>
+                <x:String>Chapter 16</x:String>
+                <x:String>Chapter 17</x:String>
+                <x:String>Chapter 18</x:String>
+                <x:String>Chapter 19</x:String>
+                <x:String>Chapter 20</x:String>
+                <x:String>Chapter 21</x:String>
+                <x:String>Chapter 22</x:String>
+                <x:String>Chapter 23</x:String>
+                <x:String>Chapter 24</x:String>
+                <x:String>Chapter 25</x:String>
+            </ListView>
+        </PivotItem>
+        <PivotItem Header="1 Chronicles">
+            <ListView ItemClick="ListView_ItemClick" IsItemClickEnabled="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding}" Style="{ThemeResource ListViewItemTextBlockStyle}" Margin="0,0,0,19" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+                <x:String>Chapter 1</x:String>
+                <x:String>Chapter 2</x:String>
+                <x:String>Chapter 3</x:String>
+                <x:String>Chapter 4</x:String>
+                <x:String>Chapter 5</x:String>
+                <x:String>Chapter 6</x:String>
+                <x:String>Chapter 7</x:String>
+                <x:String>Chapter 8</x:String>
+                <x:String>Chapter 9</x:String>
+                <x:String>Chapter 10</x:String>
+                <x:String>Chapter 11</x:String>
+                <x:String>Chapter 12</x:String>
+                <x:String>Chapter 13</x:String>
+                <x:String>Chapter 14</x:String>
+                <x:String>Chapter 15</x:String>
+                <x:String>Chapter 16</x:String>
+                <x:String>Chapter 17</x:String>
+                <x:String>Chapter 18</x:String>
+                <x:String>Chapter 19</x:String>
+                <x:String>Chapter 20</x:String>
+                <x:String>Chapter 21</x:String>
+                <x:String>Chapter 22</x:String>
+                <x:String>Chapter 23</x:String>
+                <x:String>Chapter 24</x:String>
+                <x:String>Chapter 25</x:String>
+                <x:String>Chapter 26</x:String>
+                <x:String>Chapter 27</x:String>
+                <x:String>Chapter 28</x:String>
+                <x:String>Chapter 29</x:String>
+            </ListView>
+        </PivotItem>
+        <PivotItem Header="2 Chronicles">
+            <ListView ItemClick="ListView_ItemClick" IsItemClickEnabled="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding}" Style="{ThemeResource ListViewItemTextBlockStyle}" Margin="0,0,0,19" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+                <x:String>Chapter 1</x:String>
+                <x:String>Chapter 2</x:String>
+                <x:String>Chapter 3</x:String>
+                <x:String>Chapter 4</x:String>
+                <x:String>Chapter 5</x:String>
+                <x:String>Chapter 6</x:String>
+                <x:String>Chapter 7</x:String>
+                <x:String>Chapter 8</x:String>
+                <x:String>Chapter 9</x:String>
+                <x:String>Chapter 10</x:String>
+                <x:String>Chapter 11</x:String>
+                <x:String>Chapter 12</x:String>
+                <x:String>Chapter 13</x:String>
+                <x:String>Chapter 14</x:String>
+                <x:String>Chapter 15</x:String>
+                <x:String>Chapter 16</x:String>
+                <x:String>Chapter 17</x:String>
+                <x:String>Chapter 18</x:String>
+                <x:String>Chapter 19</x:String>
+                <x:String>Chapter 20</x:String>
+                <x:String>Chapter 21</x:String>
+                <x:String>Chapter 22</x:String>
+                <x:String>Chapter 23</x:String>
+                <x:String>Chapter 24</x:String>
+                <x:String>Chapter 25</x:String>
+                <x:String>Chapter 26</x:String>
+                <x:String>Chapter 27</x:String>
+                <x:String>Chapter 28</x:String>
+                <x:String>Chapter 29</x:String>
+                <x:String>Chapter 30</x:String>
+                <x:String>Chapter 31</x:String>
+                <x:String>Chapter 32</x:String>
+                <x:String>Chapter 33</x:String>
+                <x:String>Chapter 34</x:String>
+                <x:String>Chapter 35</x:String>
+                <x:String>Chapter 36</x:String>
+            </ListView>
+        </PivotItem>
+        <PivotItem Header="Ezra">
+            <ListView ItemClick="ListView_ItemClick" IsItemClickEnabled="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding}" Style="{ThemeResource ListViewItemTextBlockStyle}" Margin="0,0,0,19" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+                <x:String>Chapter 1</x:String>
+                <x:String>Chapter 2</x:String>
+                <x:String>Chapter 3</x:String>
+                <x:String>Chapter 4</x:String>
+                <x:String>Chapter 5</x:String>
+                <x:String>Chapter 6</x:String>
+                <x:String>Chapter 7</x:String>
+                <x:String>Chapter 8</x:String>
+                <x:String>Chapter 9</x:String>
+                <x:String>Chapter 10</x:String>
+            </ListView>
+        </PivotItem>
+        <PivotItem Header="Nehemiah">
+            <ListView ItemClick="ListView_ItemClick" IsItemClickEnabled="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding}" Style="{ThemeResource ListViewItemTextBlockStyle}" Margin="0,0,0,19" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+                <x:String>Chapter 1</x:String>
+                <x:String>Chapter 2</x:String>
+                <x:String>Chapter 3</x:String>
+                <x:String>Chapter 4</x:String>
+                <x:String>Chapter 5</x:String>
+                <x:String>Chapter 6</x:String>
+                <x:String>Chapter 7</x:String>
+                <x:String>Chapter 8</x:String>
+                <x:String>Chapter 9</x:String>
+                <x:String>Chapter 10</x:String>
+                <x:String>Chapter 11</x:String>
+                <x:String>Chapter 12</x:String>
+                <x:String>Chapter 13</x:String>
+            </ListView>
+        </PivotItem>
+        <PivotItem Header="Esther">
+            <ListView ItemClick="ListView_ItemClick" IsItemClickEnabled="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding}" Style="{ThemeResource ListViewItemTextBlockStyle}" Margin="0,0,0,19" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+                <x:String>Chapter 1</x:String>
+                <x:String>Chapter 2</x:String>
+                <x:String>Chapter 3</x:String>
+                <x:String>Chapter 4</x:String>
+                <x:String>Chapter 5</x:String>
+                <x:String>Chapter 6</x:String>
+                <x:String>Chapter 7</x:String>
+                <x:String>Chapter 8</x:String>
+                <x:String>Chapter 9</x:String>
+                <x:String>Chapter 10</x:String>
+            </ListView>
+        </PivotItem>
+        <PivotItem Header="Job">
+            <ListView ItemClick="ListView_ItemClick" IsItemClickEnabled="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding}" Style="{ThemeResource ListViewItemTextBlockStyle}" Margin="0,0,0,19" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+                <x:String>Chapter 1</x:String>
+                <x:String>Chapter 2</x:String>
+                <x:String>Chapter 3</x:String>
+                <x:String>Chapter 4</x:String>
+                <x:String>Chapter 5</x:String>
+                <x:String>Chapter 6</x:String>
+                <x:String>Chapter 7</x:String>
+                <x:String>Chapter 8</x:String>
+                <x:String>Chapter 9</x:String>
+                <x:String>Chapter 10</x:String>
+                <x:String>Chapter 11</x:String>
+                <x:String>Chapter 12</x:String>
+                <x:String>Chapter 13</x:String>
+                <x:String>Chapter 14</x:String>
+                <x:String>Chapter 15</x:String>
+                <x:String>Chapter 16</x:String>
+                <x:String>Chapter 17</x:String>
+                <x:String>Chapter 18</x:String>
+                <x:String>Chapter 19</x:String>
+                <x:String>Chapter 20</x:String>
+                <x:String>Chapter 21</x:String>
+                <x:String>Chapter 22</x:String>
+                <x:String>Chapter 23</x:String>
+                <x:String>Chapter 24</x:String>
+                <x:String>Chapter 25</x:String>
+                <x:String>Chapter 26</x:String>
+                <x:String>Chapter 27</x:String>
+                <x:String>Chapter 28</x:String>
+                <x:String>Chapter 29</x:String>
+                <x:String>Chapter 30</x:String>
+                <x:String>Chapter 31</x:String>
+                <x:String>Chapter 32</x:String>
+                <x:String>Chapter 33</x:String>
+                <x:String>Chapter 34</x:String>
+                <x:String>Chapter 35</x:String>
+                <x:String>Chapter 36</x:String>
+                <x:String>Chapter 37</x:String>
+                <x:String>Chapter 38</x:String>
+                <x:String>Chapter 39</x:String>
+                <x:String>Chapter 40</x:String>
+                <x:String>Chapter 41</x:String>
+                <x:String>Chapter 42</x:String>
+            </ListView>
+        </PivotItem>
+        <PivotItem Header="Psalms">
+            <ListView ItemClick="ListView_ItemClick" IsItemClickEnabled="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding}" Style="{ThemeResource ListViewItemTextBlockStyle}" Margin="0,0,0,19" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+                <x:String>Chapter 1</x:String>
+                <x:String>Chapter 2</x:String>
+                <x:String>Chapter 3</x:String>
+                <x:String>Chapter 4</x:String>
+                <x:String>Chapter 5</x:String>
+                <x:String>Chapter 6</x:String>
+                <x:String>Chapter 7</x:String>
+                <x:String>Chapter 8</x:String>
+                <x:String>Chapter 9</x:String>
+                <x:String>Chapter 10</x:String>
+                <x:String>Chapter 11</x:String>
+                <x:String>Chapter 12</x:String>
+                <x:String>Chapter 13</x:String>
+                <x:String>Chapter 14</x:String>
+                <x:String>Chapter 15</x:String>
+                <x:String>Chapter 16</x:String>
+                <x:String>Chapter 17</x:String>
+                <x:String>Chapter 18</x:String>
+                <x:String>Chapter 19</x:String>
+                <x:String>Chapter 20</x:String>
+                <x:String>Chapter 21</x:String>
+                <x:String>Chapter 22</x:String>
+                <x:String>Chapter 23</x:String>
+                <x:String>Chapter 24</x:String>
+                <x:String>Chapter 25</x:String>
+                <x:String>Chapter 26</x:String>
+                <x:String>Chapter 27</x:String>
+                <x:String>Chapter 28</x:String>
+                <x:String>Chapter 29</x:String>
+                <x:String>Chapter 30</x:String>
+                <x:String>Chapter 31</x:String>
+                <x:String>Chapter 32</x:String>
+                <x:String>Chapter 33</x:String>
+                <x:String>Chapter 34</x:String>
+                <x:String>Chapter 35</x:String>
+                <x:String>Chapter 36</x:String>
+                <x:String>Chapter 37</x:String>
+                <x:String>Chapter 38</x:String>
+                <x:String>Chapter 39</x:String>
+                <x:String>Chapter 40</x:String>
+                <x:String>Chapter 41</x:String>
+                <x:String>Chapter 42</x:String>
+                <x:String>Chapter 43</x:String>
+                <x:String>Chapter 44</x:String>
+                <x:String>Chapter 45</x:String>
+                <x:String>Chapter 46</x:String>
+                <x:String>Chapter 47</x:String>
+                <x:String>Chapter 48</x:String>
+                <x:String>Chapter 49</x:String>
+                <x:String>Chapter 50</x:String>
+                <x:String>Chapter 51</x:String>
+                <x:String>Chapter 52</x:String>
+                <x:String>Chapter 53</x:String>
+                <x:String>Chapter 54</x:String>
+                <x:String>Chapter 55</x:String>
+                <x:String>Chapter 56</x:String>
+                <x:String>Chapter 57</x:String>
+                <x:String>Chapter 58</x:String>
+                <x:String>Chapter 59</x:String>
+                <x:String>Chapter 60</x:String>
+                <x:String>Chapter 61</x:String>
+                <x:String>Chapter 62</x:String>
+                <x:String>Chapter 63</x:String>
+                <x:String>Chapter 64</x:String>
+                <x:String>Chapter 65</x:String>
+                <x:String>Chapter 66</x:String>
+                <x:String>Chapter 67</x:String>
+                <x:String>Chapter 68</x:String>
+                <x:String>Chapter 69</x:String>
+                <x:String>Chapter 70</x:String>
+                <x:String>Chapter 71</x:String>
+                <x:String>Chapter 72</x:String>
+                <x:String>Chapter 73</x:String>
+                <x:String>Chapter 74</x:String>
+                <x:String>Chapter 75</x:String>
+                <x:String>Chapter 76</x:String>
+                <x:String>Chapter 77</x:String>
+                <x:String>Chapter 78</x:String>
+                <x:String>Chapter 79</x:String>
+                <x:String>Chapter 80</x:String>
+                <x:String>Chapter 81</x:String>
+                <x:String>Chapter 82</x:String>
+                <x:String>Chapter 83</x:String>
+                <x:String>Chapter 84</x:String>
+                <x:String>Chapter 85</x:String>
+                <x:String>Chapter 86</x:String>
+                <x:String>Chapter 87</x:String>
+                <x:String>Chapter 88</x:String>
+                <x:String>Chapter 89</x:String>
+                <x:String>Chapter 90</x:String>
+                <x:String>Chapter 91</x:String>
+                <x:String>Chapter 92</x:String>
+                <x:String>Chapter 93</x:String>
+                <x:String>Chapter 94</x:String>
+                <x:String>Chapter 95</x:String>
+                <x:String>Chapter 96</x:String>
+                <x:String>Chapter 97</x:String>
+                <x:String>Chapter 98</x:String>
+                <x:String>Chapter 99</x:String>
+                <x:String>Chapter 100</x:String>
+                <x:String>Chapter 101</x:String>
+                <x:String>Chapter 102</x:String>
+                <x:String>Chapter 103</x:String>
+                <x:String>Chapter 104</x:String>
+                <x:String>Chapter 105</x:String>
+                <x:String>Chapter 106</x:String>
+                <x:String>Chapter 107</x:String>
+                <x:String>Chapter 108</x:String>
+                <x:String>Chapter 109</x:String>
+                <x:String>Chapter 110</x:String>
+                <x:String>Chapter 111</x:String>
+                <x:String>Chapter 112</x:String>
+                <x:String>Chapter 113</x:String>
+                <x:String>Chapter 114</x:String>
+                <x:String>Chapter 115</x:String>
+                <x:String>Chapter 116</x:String>
+                <x:String>Chapter 117</x:String>
+                <x:String>Chapter 118</x:String>
+                <x:String>Chapter 119</x:String>
+                <x:String>Chapter 120</x:String>
+                <x:String>Chapter 121</x:String>
+                <x:String>Chapter 122</x:String>
+                <x:String>Chapter 123</x:String>
+                <x:String>Chapter 124</x:String>
+                <x:String>Chapter 125</x:String>
+                <x:String>Chapter 126</x:String>
+                <x:String>Chapter 127</x:String>
+                <x:String>Chapter 128</x:String>
+                <x:String>Chapter 129</x:String>
+                <x:String>Chapter 130</x:String>
+                <x:String>Chapter 131</x:String>
+                <x:String>Chapter 132</x:String>
+                <x:String>Chapter 133</x:String>
+                <x:String>Chapter 134</x:String>
+                <x:String>Chapter 135</x:String>
+                <x:String>Chapter 136</x:String>
+                <x:String>Chapter 137</x:String>
+                <x:String>Chapter 138</x:String>
+                <x:String>Chapter 139</x:String>
+                <x:String>Chapter 140</x:String>
+                <x:String>Chapter 141</x:String>
+                <x:String>Chapter 142</x:String>
+                <x:String>Chapter 143</x:String>
+                <x:String>Chapter 144</x:String>
+                <x:String>Chapter 145</x:String>
+                <x:String>Chapter 146</x:String>
+                <x:String>Chapter 147</x:String>
+                <x:String>Chapter 148</x:String>
+                <x:String>Chapter 149</x:String>
+                <x:String>Chapter 150</x:String>
+            </ListView>
+        </PivotItem>
+        <PivotItem Header="Proverbs">
+            <ListView ItemClick="ListView_ItemClick" IsItemClickEnabled="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding}" Style="{ThemeResource ListViewItemTextBlockStyle}" Margin="0,0,0,19" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+                <x:String>Chapter 1</x:String>
+                <x:String>Chapter 2</x:String>
+                <x:String>Chapter 3</x:String>
+                <x:String>Chapter 4</x:String>
+                <x:String>Chapter 5</x:String>
+                <x:String>Chapter 6</x:String>
+                <x:String>Chapter 7</x:String>
+                <x:String>Chapter 8</x:String>
+                <x:String>Chapter 9</x:String>
+                <x:String>Chapter 10</x:String>
+                <x:String>Chapter 11</x:String>
+                <x:String>Chapter 12</x:String>
+                <x:String>Chapter 13</x:String>
+                <x:String>Chapter 14</x:String>
+                <x:String>Chapter 15</x:String>
+                <x:String>Chapter 16</x:String>
+                <x:String>Chapter 17</x:String>
+                <x:String>Chapter 18</x:String>
+                <x:String>Chapter 19</x:String>
+                <x:String>Chapter 20</x:String>
+                <x:String>Chapter 21</x:String>
+                <x:String>Chapter 22</x:String>
+                <x:String>Chapter 23</x:String>
+                <x:String>Chapter 24</x:String>
+                <x:String>Chapter 25</x:String>
+                <x:String>Chapter 26</x:String>
+                <x:String>Chapter 27</x:String>
+                <x:String>Chapter 28</x:String>
+                <x:String>Chapter 29</x:String>
+                <x:String>Chapter 30</x:String>
+                <x:String>Chapter 31</x:String>
+            </ListView>
+        </PivotItem>
+        <PivotItem Header="Ecclesiastes">
+            <ListView ItemClick="ListView_ItemClick" IsItemClickEnabled="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding}" Style="{ThemeResource ListViewItemTextBlockStyle}" Margin="0,0,0,19" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+                <x:String>Chapter 1</x:String>
+                <x:String>Chapter 2</x:String>
+                <x:String>Chapter 3</x:String>
+                <x:String>Chapter 4</x:String>
+                <x:String>Chapter 5</x:String>
+                <x:String>Chapter 6</x:String>
+                <x:String>Chapter 7</x:String>
+                <x:String>Chapter 8</x:String>
+                <x:String>Chapter 9</x:String>
+                <x:String>Chapter 10</x:String>
+                <x:String>Chapter 11</x:String>
+                <x:String>Chapter 12</x:String>
+            </ListView>
+        </PivotItem>
+        <PivotItem Header="Song of Solomon">
+            <ListView ItemClick="ListView_ItemClick" IsItemClickEnabled="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding}" Style="{ThemeResource ListViewItemTextBlockStyle}" Margin="0,0,0,19" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+                <x:String>Chapter 1</x:String>
+                <x:String>Chapter 2</x:String>
+                <x:String>Chapter 3</x:String>
+                <x:String>Chapter 4</x:String>
+                <x:String>Chapter 5</x:String>
+                <x:String>Chapter 6</x:String>
+                <x:String>Chapter 7</x:String>
+                <x:String>Chapter 8</x:String>
+            </ListView>
+        </PivotItem>
+        <PivotItem Header="Isaiah">
+            <ListView ItemClick="ListView_ItemClick" IsItemClickEnabled="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding}" Style="{ThemeResource ListViewItemTextBlockStyle}" Margin="0,0,0,19" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+                <x:String>Chapter 1</x:String>
+                <x:String>Chapter 2</x:String>
+                <x:String>Chapter 3</x:String>
+                <x:String>Chapter 4</x:String>
+                <x:String>Chapter 5</x:String>
+                <x:String>Chapter 6</x:String>
+                <x:String>Chapter 7</x:String>
+                <x:String>Chapter 8</x:String>
+                <x:String>Chapter 9</x:String>
+                <x:String>Chapter 10</x:String>
+                <x:String>Chapter 11</x:String>
+                <x:String>Chapter 12</x:String>
+                <x:String>Chapter 13</x:String>
+                <x:String>Chapter 14</x:String>
+                <x:String>Chapter 15</x:String>
+                <x:String>Chapter 16</x:String>
+                <x:String>Chapter 17</x:String>
+                <x:String>Chapter 18</x:String>
+                <x:String>Chapter 19</x:String>
+                <x:String>Chapter 20</x:String>
+                <x:String>Chapter 21</x:String>
+                <x:String>Chapter 22</x:String>
+                <x:String>Chapter 23</x:String>
+                <x:String>Chapter 24</x:String>
+                <x:String>Chapter 25</x:String>
+                <x:String>Chapter 26</x:String>
+                <x:String>Chapter 27</x:String>
+                <x:String>Chapter 28</x:String>
+                <x:String>Chapter 29</x:String>
+                <x:String>Chapter 30</x:String>
+                <x:String>Chapter 31</x:String>
+                <x:String>Chapter 32</x:String>
+                <x:String>Chapter 33</x:String>
+                <x:String>Chapter 34</x:String>
+                <x:String>Chapter 35</x:String>
+                <x:String>Chapter 36</x:String>
+                <x:String>Chapter 37</x:String>
+                <x:String>Chapter 38</x:String>
+                <x:String>Chapter 39</x:String>
+                <x:String>Chapter 40</x:String>
+                <x:String>Chapter 41</x:String>
+                <x:String>Chapter 42</x:String>
+                <x:String>Chapter 43</x:String>
+                <x:String>Chapter 44</x:String>
+                <x:String>Chapter 45</x:String>
+                <x:String>Chapter 46</x:String>
+                <x:String>Chapter 47</x:String>
+                <x:String>Chapter 48</x:String>
+                <x:String>Chapter 49</x:String>
+                <x:String>Chapter 50</x:String>
+                <x:String>Chapter 51</x:String>
+                <x:String>Chapter 52</x:String>
+                <x:String>Chapter 53</x:String>
+                <x:String>Chapter 54</x:String>
+                <x:String>Chapter 55</x:String>
+                <x:String>Chapter 56</x:String>
+                <x:String>Chapter 57</x:String>
+                <x:String>Chapter 58</x:String>
+                <x:String>Chapter 59</x:String>
+                <x:String>Chapter 60</x:String>
+                <x:String>Chapter 61</x:String>
+                <x:String>Chapter 62</x:String>
+                <x:String>Chapter 63</x:String>
+                <x:String>Chapter 64</x:String>
+                <x:String>Chapter 65</x:String>
+                <x:String>Chapter 66</x:String>
+            </ListView>
+        </PivotItem>
+        <PivotItem Header="Jeremiah">
+            <ListView ItemClick="ListView_ItemClick" IsItemClickEnabled="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding}" Style="{ThemeResource ListViewItemTextBlockStyle}" Margin="0,0,0,19" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+                <x:String>Chapter 1</x:String>
+                <x:String>Chapter 2</x:String>
+                <x:String>Chapter 3</x:String>
+                <x:String>Chapter 4</x:String>
+                <x:String>Chapter 5</x:String>
+                <x:String>Chapter 6</x:String>
+                <x:String>Chapter 7</x:String>
+                <x:String>Chapter 8</x:String>
+                <x:String>Chapter 9</x:String>
+                <x:String>Chapter 10</x:String>
+                <x:String>Chapter 11</x:String>
+                <x:String>Chapter 12</x:String>
+                <x:String>Chapter 13</x:String>
+                <x:String>Chapter 14</x:String>
+                <x:String>Chapter 15</x:String>
+                <x:String>Chapter 16</x:String>
+                <x:String>Chapter 17</x:String>
+                <x:String>Chapter 18</x:String>
+                <x:String>Chapter 19</x:String>
+                <x:String>Chapter 20</x:String>
+                <x:String>Chapter 21</x:String>
+                <x:String>Chapter 22</x:String>
+                <x:String>Chapter 23</x:String>
+                <x:String>Chapter 24</x:String>
+                <x:String>Chapter 25</x:String>
+                <x:String>Chapter 26</x:String>
+                <x:String>Chapter 27</x:String>
+                <x:String>Chapter 28</x:String>
+                <x:String>Chapter 29</x:String>
+                <x:String>Chapter 30</x:String>
+                <x:String>Chapter 31</x:String>
+                <x:String>Chapter 32</x:String>
+                <x:String>Chapter 33</x:String>
+                <x:String>Chapter 34</x:String>
+                <x:String>Chapter 35</x:String>
+                <x:String>Chapter 36</x:String>
+                <x:String>Chapter 37</x:String>
+                <x:String>Chapter 38</x:String>
+                <x:String>Chapter 39</x:String>
+                <x:String>Chapter 40</x:String>
+                <x:String>Chapter 41</x:String>
+                <x:String>Chapter 42</x:String>
+                <x:String>Chapter 43</x:String>
+                <x:String>Chapter 44</x:String>
+                <x:String>Chapter 45</x:String>
+                <x:String>Chapter 46</x:String>
+                <x:String>Chapter 47</x:String>
+                <x:String>Chapter 48</x:String>
+                <x:String>Chapter 49</x:String>
+                <x:String>Chapter 50</x:String>
+                <x:String>Chapter 51</x:String>
+                <x:String>Chapter 52</x:String>
+            </ListView>
+        </PivotItem>
+        <PivotItem Header="Lamentations">
+            <ListView ItemClick="ListView_ItemClick" IsItemClickEnabled="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding}" Style="{ThemeResource ListViewItemTextBlockStyle}" Margin="0,0,0,19" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+                <x:String>Chapter 1</x:String>
+                <x:String>Chapter 2</x:String>
+                <x:String>Chapter 3</x:String>
+                <x:String>Chapter 4</x:String>
+                <x:String>Chapter 5</x:String>
+            </ListView>
+        </PivotItem>
+        <PivotItem Header="Ezekiel">
+            <ListView ItemClick="ListView_ItemClick" IsItemClickEnabled="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding}" Style="{ThemeResource ListViewItemTextBlockStyle}" Margin="0,0,0,19" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+                <x:String>Chapter 1</x:String>
+                <x:String>Chapter 2</x:String>
+                <x:String>Chapter 3</x:String>
+                <x:String>Chapter 4</x:String>
+                <x:String>Chapter 5</x:String>
+                <x:String>Chapter 6</x:String>
+                <x:String>Chapter 7</x:String>
+                <x:String>Chapter 8</x:String>
+                <x:String>Chapter 9</x:String>
+                <x:String>Chapter 10</x:String>
+                <x:String>Chapter 11</x:String>
+                <x:String>Chapter 12</x:String>
+                <x:String>Chapter 13</x:String>
+                <x:String>Chapter 14</x:String>
+                <x:String>Chapter 15</x:String>
+                <x:String>Chapter 16</x:String>
+                <x:String>Chapter 17</x:String>
+                <x:String>Chapter 18</x:String>
+                <x:String>Chapter 19</x:String>
+                <x:String>Chapter 20</x:String>
+                <x:String>Chapter 21</x:String>
+                <x:String>Chapter 22</x:String>
+                <x:String>Chapter 23</x:String>
+                <x:String>Chapter 24</x:String>
+                <x:String>Chapter 25</x:String>
+                <x:String>Chapter 26</x:String>
+                <x:String>Chapter 27</x:String>
+                <x:String>Chapter 28</x:String>
+                <x:String>Chapter 29</x:String>
+                <x:String>Chapter 30</x:String>
+                <x:String>Chapter 31</x:String>
+                <x:String>Chapter 32</x:String>
+                <x:String>Chapter 33</x:String>
+                <x:String>Chapter 34</x:String>
+                <x:String>Chapter 35</x:String>
+                <x:String>Chapter 36</x:String>
+                <x:String>Chapter 37</x:String>
+                <x:String>Chapter 38</x:String>
+                <x:String>Chapter 39</x:String>
+                <x:String>Chapter 40</x:String>
+                <x:String>Chapter 41</x:String>
+                <x:String>Chapter 42</x:String>
+                <x:String>Chapter 43</x:String>
+                <x:String>Chapter 44</x:String>
+                <x:String>Chapter 45</x:String>
+                <x:String>Chapter 46</x:String>
+                <x:String>Chapter 47</x:String>
+                <x:String>Chapter 48</x:String>
+            </ListView>
+        </PivotItem>
+        <PivotItem Header="Daniel">
+            <ListView ItemClick="ListView_ItemClick" IsItemClickEnabled="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding}" Style="{ThemeResource ListViewItemTextBlockStyle}" Margin="0,0,0,19" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+                <x:String>Chapter 1</x:String>
+                <x:String>Chapter 2</x:String>
+                <x:String>Chapter 3</x:String>
+                <x:String>Chapter 4</x:String>
+                <x:String>Chapter 5</x:String>
+                <x:String>Chapter 6</x:String>
+                <x:String>Chapter 7</x:String>
+                <x:String>Chapter 8</x:String>
+                <x:String>Chapter 9</x:String>
+                <x:String>Chapter 10</x:String>
+                <x:String>Chapter 11</x:String>
+                <x:String>Chapter 12</x:String>
+            </ListView>
+        </PivotItem>
+        <PivotItem Header="Hosea">
+            <ListView ItemClick="ListView_ItemClick" IsItemClickEnabled="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding}" Style="{ThemeResource ListViewItemTextBlockStyle}" Margin="0,0,0,19" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+                <x:String>Chapter 1</x:String>
+                <x:String>Chapter 2</x:String>
+                <x:String>Chapter 3</x:String>
+                <x:String>Chapter 4</x:String>
+                <x:String>Chapter 5</x:String>
+                <x:String>Chapter 6</x:String>
+                <x:String>Chapter 7</x:String>
+                <x:String>Chapter 8</x:String>
+                <x:String>Chapter 9</x:String>
+                <x:String>Chapter 10</x:String>
+                <x:String>Chapter 11</x:String>
+                <x:String>Chapter 12</x:String>
+                <x:String>Chapter 13</x:String>
+                <x:String>Chapter 14</x:String>
+            </ListView>
+        </PivotItem>
+        <PivotItem Header="Joel">
+            <ListView ItemClick="ListView_ItemClick" IsItemClickEnabled="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding}" Style="{ThemeResource ListViewItemTextBlockStyle}" Margin="0,0,0,19" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+                <x:String>Chapter 1</x:String>
+                <x:String>Chapter 2</x:String>
+                <x:String>Chapter 3</x:String>
+            </ListView>
+        </PivotItem>
+        <PivotItem Header="Amos">
+            <ListView ItemClick="ListView_ItemClick" IsItemClickEnabled="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding}" Style="{ThemeResource ListViewItemTextBlockStyle}" Margin="0,0,0,19" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+                <x:String>Chapter 1</x:String>
+                <x:String>Chapter 2</x:String>
+                <x:String>Chapter 3</x:String>
+                <x:String>Chapter 4</x:String>
+                <x:String>Chapter 5</x:String>
+                <x:String>Chapter 6</x:String>
+                <x:String>Chapter 7</x:String>
+                <x:String>Chapter 8</x:String>
+                <x:String>Chapter 9</x:String>
+            </ListView>
+        </PivotItem>
+        <PivotItem Header="Obadiah">
+            <ListView ItemClick="ListView_ItemClick" IsItemClickEnabled="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding}" Style="{ThemeResource ListViewItemTextBlockStyle}" Margin="0,0,0,19" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+                <x:String>Chapter 1</x:String>
+            </ListView>
+        </PivotItem>
+        <PivotItem Header="Jonah">
+            <ListView ItemClick="ListView_ItemClick" IsItemClickEnabled="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding}" Style="{ThemeResource ListViewItemTextBlockStyle}" Margin="0,0,0,19" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+                <x:String>Chapter 1</x:String>
+                <x:String>Chapter 2</x:String>
+                <x:String>Chapter 3</x:String>
+                <x:String>Chapter 4</x:String>
+            </ListView>
+        </PivotItem>
+        <PivotItem Header="Micah">
+            <ListView ItemClick="ListView_ItemClick" IsItemClickEnabled="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding}" Style="{ThemeResource ListViewItemTextBlockStyle}" Margin="0,0,0,19" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+                <x:String>Chapter 1</x:String>
+                <x:String>Chapter 2</x:String>
+                <x:String>Chapter 3</x:String>
+                <x:String>Chapter 4</x:String>
+                <x:String>Chapter 5</x:String>
+                <x:String>Chapter 6</x:String>
+                <x:String>Chapter 7</x:String>
+            </ListView>
+        </PivotItem>
+        <PivotItem Header="Nahum">
+            <ListView ItemClick="ListView_ItemClick" IsItemClickEnabled="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding}" Style="{ThemeResource ListViewItemTextBlockStyle}" Margin="0,0,0,19" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+                <x:String>Chapter 1</x:String>
+                <x:String>Chapter 2</x:String>
+                <x:String>Chapter 3</x:String>
+            </ListView>
+        </PivotItem>
+        <PivotItem Header="Habakkuk">
+            <ListView ItemClick="ListView_ItemClick" IsItemClickEnabled="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding}" Style="{ThemeResource ListViewItemTextBlockStyle}" Margin="0,0,0,19" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+                <x:String>Chapter 1</x:String>
+                <x:String>Chapter 2</x:String>
+                <x:String>Chapter 3</x:String>
+            </ListView>
+        </PivotItem>
+        <PivotItem Header="Zephaniah">
+            <ListView ItemClick="ListView_ItemClick" IsItemClickEnabled="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding}" Style="{ThemeResource ListViewItemTextBlockStyle}" Margin="0,0,0,19" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+                <x:String>Chapter 1</x:String>
+                <x:String>Chapter 2</x:String>
+                <x:String>Chapter 3</x:String>
+            </ListView>
+        </PivotItem>
+        <PivotItem Header="Haggai">
+            <ListView ItemClick="ListView_ItemClick" IsItemClickEnabled="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding}" Style="{ThemeResource ListViewItemTextBlockStyle}" Margin="0,0,0,19" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+                <x:String>Chapter 1</x:String>
+                <x:String>Chapter 2</x:String>
+            </ListView>
+        </PivotItem>
+        <PivotItem Header="Zechariah">
+            <ListView ItemClick="ListView_ItemClick" IsItemClickEnabled="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding}" Style="{ThemeResource ListViewItemTextBlockStyle}" Margin="0,0,0,19" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+                <x:String>Chapter 1</x:String>
+                <x:String>Chapter 2</x:String>
+                <x:String>Chapter 3</x:String>
+                <x:String>Chapter 4</x:String>
+                <x:String>Chapter 5</x:String>
+                <x:String>Chapter 6</x:String>
+                <x:String>Chapter 7</x:String>
+                <x:String>Chapter 8</x:String>
+                <x:String>Chapter 9</x:String>
+                <x:String>Chapter 10</x:String>
+                <x:String>Chapter 11</x:String>
+                <x:String>Chapter 12</x:String>
+                <x:String>Chapter 13</x:String>
+                <x:String>Chapter 14</x:String>
+            </ListView>
+        </PivotItem>
+        <PivotItem Header="Malachi">
+            <ListView ItemClick="ListView_ItemClick" IsItemClickEnabled="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding}" Style="{ThemeResource ListViewItemTextBlockStyle}" Margin="0,0,0,19" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+                <x:String>Chapter 1</x:String>
+                <x:String>Chapter 2</x:String>
+                <x:String>Chapter 3</x:String>
+                <x:String>Chapter 4</x:String>
+            </ListView>
+        </PivotItem>
+        <PivotItem Header="Matthew">
+            <ListView ItemClick="ListView_ItemClick" IsItemClickEnabled="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding}" Style="{ThemeResource ListViewItemTextBlockStyle}" Margin="0,0,0,19" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+                <x:String>Chapter 1</x:String>
+                <x:String>Chapter 2</x:String>
+                <x:String>Chapter 3</x:String>
+                <x:String>Chapter 4</x:String>
+                <x:String>Chapter 5</x:String>
+                <x:String>Chapter 6</x:String>
+                <x:String>Chapter 7</x:String>
+                <x:String>Chapter 8</x:String>
+                <x:String>Chapter 9</x:String>
+                <x:String>Chapter 10</x:String>
+                <x:String>Chapter 11</x:String>
+                <x:String>Chapter 12</x:String>
+                <x:String>Chapter 13</x:String>
+                <x:String>Chapter 14</x:String>
+                <x:String>Chapter 15</x:String>
+                <x:String>Chapter 16</x:String>
+                <x:String>Chapter 17</x:String>
+                <x:String>Chapter 18</x:String>
+                <x:String>Chapter 19</x:String>
+                <x:String>Chapter 20</x:String>
+                <x:String>Chapter 21</x:String>
+                <x:String>Chapter 22</x:String>
+                <x:String>Chapter 23</x:String>
+                <x:String>Chapter 24</x:String>
+                <x:String>Chapter 25</x:String>
+                <x:String>Chapter 26</x:String>
+                <x:String>Chapter 27</x:String>
+                <x:String>Chapter 28</x:String>
+            </ListView>
+        </PivotItem>
+        <PivotItem Header="Mark">
+            <ListView ItemClick="ListView_ItemClick" IsItemClickEnabled="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding}" Style="{ThemeResource ListViewItemTextBlockStyle}" Margin="0,0,0,19" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+                <x:String>Chapter 1</x:String>
+                <x:String>Chapter 2</x:String>
+                <x:String>Chapter 3</x:String>
+                <x:String>Chapter 4</x:String>
+                <x:String>Chapter 5</x:String>
+                <x:String>Chapter 6</x:String>
+                <x:String>Chapter 7</x:String>
+                <x:String>Chapter 8</x:String>
+                <x:String>Chapter 9</x:String>
+                <x:String>Chapter 10</x:String>
+                <x:String>Chapter 11</x:String>
+                <x:String>Chapter 12</x:String>
+                <x:String>Chapter 13</x:String>
+                <x:String>Chapter 14</x:String>
+                <x:String>Chapter 15</x:String>
+                <x:String>Chapter 16</x:String>
+            </ListView>
+        </PivotItem>
+        <PivotItem Header="Luke">
+            <ListView ItemClick="ListView_ItemClick" IsItemClickEnabled="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding}" Style="{ThemeResource ListViewItemTextBlockStyle}" Margin="0,0,0,19" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+                <x:String>Chapter 1</x:String>
+                <x:String>Chapter 2</x:String>
+                <x:String>Chapter 3</x:String>
+                <x:String>Chapter 4</x:String>
+                <x:String>Chapter 5</x:String>
+                <x:String>Chapter 6</x:String>
+                <x:String>Chapter 7</x:String>
+                <x:String>Chapter 8</x:String>
+                <x:String>Chapter 9</x:String>
+                <x:String>Chapter 10</x:String>
+                <x:String>Chapter 11</x:String>
+                <x:String>Chapter 12</x:String>
+                <x:String>Chapter 13</x:String>
+                <x:String>Chapter 14</x:String>
+                <x:String>Chapter 15</x:String>
+                <x:String>Chapter 16</x:String>
+                <x:String>Chapter 17</x:String>
+                <x:String>Chapter 18</x:String>
+                <x:String>Chapter 19</x:String>
+                <x:String>Chapter 20</x:String>
+                <x:String>Chapter 21</x:String>
+                <x:String>Chapter 22</x:String>
+                <x:String>Chapter 23</x:String>
+                <x:String>Chapter 24</x:String>
+            </ListView>
+        </PivotItem>
+        <PivotItem Header="John">
+            <ListView ItemClick="ListView_ItemClick" IsItemClickEnabled="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding}" Style="{ThemeResource ListViewItemTextBlockStyle}" Margin="0,0,0,19" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+                <x:String>Chapter 1</x:String>
+                <x:String>Chapter 2</x:String>
+                <x:String>Chapter 3</x:String>
+                <x:String>Chapter 4</x:String>
+                <x:String>Chapter 5</x:String>
+                <x:String>Chapter 6</x:String>
+                <x:String>Chapter 7</x:String>
+                <x:String>Chapter 8</x:String>
+                <x:String>Chapter 9</x:String>
+                <x:String>Chapter 10</x:String>
+                <x:String>Chapter 11</x:String>
+                <x:String>Chapter 12</x:String>
+                <x:String>Chapter 13</x:String>
+                <x:String>Chapter 14</x:String>
+                <x:String>Chapter 15</x:String>
+                <x:String>Chapter 16</x:String>
+                <x:String>Chapter 17</x:String>
+                <x:String>Chapter 18</x:String>
+                <x:String>Chapter 19</x:String>
+                <x:String>Chapter 20</x:String>
+                <x:String>Chapter 21</x:String>
+            </ListView>
+        </PivotItem>
+        <PivotItem Header="Acts">
+            <ListView ItemClick="ListView_ItemClick" IsItemClickEnabled="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding}" Style="{ThemeResource ListViewItemTextBlockStyle}" Margin="0,0,0,19" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+                <x:String>Chapter 1</x:String>
+                <x:String>Chapter 2</x:String>
+                <x:String>Chapter 3</x:String>
+                <x:String>Chapter 4</x:String>
+                <x:String>Chapter 5</x:String>
+                <x:String>Chapter 6</x:String>
+                <x:String>Chapter 7</x:String>
+                <x:String>Chapter 8</x:String>
+                <x:String>Chapter 9</x:String>
+                <x:String>Chapter 10</x:String>
+                <x:String>Chapter 11</x:String>
+                <x:String>Chapter 12</x:String>
+                <x:String>Chapter 13</x:String>
+                <x:String>Chapter 14</x:String>
+                <x:String>Chapter 15</x:String>
+                <x:String>Chapter 16</x:String>
+                <x:String>Chapter 17</x:String>
+                <x:String>Chapter 18</x:String>
+                <x:String>Chapter 19</x:String>
+                <x:String>Chapter 20</x:String>
+                <x:String>Chapter 21</x:String>
+                <x:String>Chapter 22</x:String>
+                <x:String>Chapter 23</x:String>
+                <x:String>Chapter 24</x:String>
+                <x:String>Chapter 25</x:String>
+                <x:String>Chapter 26</x:String>
+                <x:String>Chapter 27</x:String>
+                <x:String>Chapter 28</x:String>
+            </ListView>
+        </PivotItem>
+        <PivotItem Header="Romans">
+            <ListView ItemClick="ListView_ItemClick" IsItemClickEnabled="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding}" Style="{ThemeResource ListViewItemTextBlockStyle}" Margin="0,0,0,19" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+                <x:String>Chapter 1</x:String>
+                <x:String>Chapter 2</x:String>
+                <x:String>Chapter 3</x:String>
+                <x:String>Chapter 4</x:String>
+                <x:String>Chapter 5</x:String>
+                <x:String>Chapter 6</x:String>
+                <x:String>Chapter 7</x:String>
+                <x:String>Chapter 8</x:String>
+                <x:String>Chapter 9</x:String>
+                <x:String>Chapter 10</x:String>
+                <x:String>Chapter 11</x:String>
+                <x:String>Chapter 12</x:String>
+                <x:String>Chapter 13</x:String>
+                <x:String>Chapter 14</x:String>
+                <x:String>Chapter 15</x:String>
+                <x:String>Chapter 16</x:String>
+            </ListView>
+        </PivotItem>
+        <PivotItem Header="1 Corinthians">
+            <ListView ItemClick="ListView_ItemClick" IsItemClickEnabled="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding}" Style="{ThemeResource ListViewItemTextBlockStyle}" Margin="0,0,0,19" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+                <x:String>Chapter 1</x:String>
+                <x:String>Chapter 2</x:String>
+                <x:String>Chapter 3</x:String>
+                <x:String>Chapter 4</x:String>
+                <x:String>Chapter 5</x:String>
+                <x:String>Chapter 6</x:String>
+                <x:String>Chapter 7</x:String>
+                <x:String>Chapter 8</x:String>
+                <x:String>Chapter 9</x:String>
+                <x:String>Chapter 10</x:String>
+                <x:String>Chapter 11</x:String>
+                <x:String>Chapter 12</x:String>
+                <x:String>Chapter 13</x:String>
+                <x:String>Chapter 14</x:String>
+                <x:String>Chapter 15</x:String>
+                <x:String>Chapter 16</x:String>
+            </ListView>
+        </PivotItem>
+        <PivotItem Header="2 Corinthians">
+            <ListView ItemClick="ListView_ItemClick" IsItemClickEnabled="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding}" Style="{ThemeResource ListViewItemTextBlockStyle}" Margin="0,0,0,19" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+                <x:String>Chapter 1</x:String>
+                <x:String>Chapter 2</x:String>
+                <x:String>Chapter 3</x:String>
+                <x:String>Chapter 4</x:String>
+                <x:String>Chapter 5</x:String>
+                <x:String>Chapter 6</x:String>
+                <x:String>Chapter 7</x:String>
+                <x:String>Chapter 8</x:String>
+                <x:String>Chapter 9</x:String>
+                <x:String>Chapter 10</x:String>
+                <x:String>Chapter 11</x:String>
+                <x:String>Chapter 12</x:String>
+                <x:String>Chapter 13</x:String>
+            </ListView>
+        </PivotItem>
+        <PivotItem Header="Galatians">
+            <ListView ItemClick="ListView_ItemClick" IsItemClickEnabled="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding}" Style="{ThemeResource ListViewItemTextBlockStyle}" Margin="0,0,0,19" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+                <x:String>Chapter 1</x:String>
+                <x:String>Chapter 2</x:String>
+                <x:String>Chapter 3</x:String>
+                <x:String>Chapter 4</x:String>
+                <x:String>Chapter 5</x:String>
+                <x:String>Chapter 6</x:String>
+            </ListView>
+        </PivotItem>
+        <PivotItem Header="Ephesians">
+            <ListView ItemClick="ListView_ItemClick" IsItemClickEnabled="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding}" Style="{ThemeResource ListViewItemTextBlockStyle}" Margin="0,0,0,19" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+                <x:String>Chapter 1</x:String>
+                <x:String>Chapter 2</x:String>
+                <x:String>Chapter 3</x:String>
+                <x:String>Chapter 4</x:String>
+                <x:String>Chapter 5</x:String>
+                <x:String>Chapter 6</x:String>
+            </ListView>
+        </PivotItem>
+        <PivotItem Header="Philippians">
+            <ListView ItemClick="ListView_ItemClick" IsItemClickEnabled="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding}" Style="{ThemeResource ListViewItemTextBlockStyle}" Margin="0,0,0,19" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+                <x:String>Chapter 1</x:String>
+                <x:String>Chapter 2</x:String>
+                <x:String>Chapter 3</x:String>
+                <x:String>Chapter 4</x:String>
+            </ListView>
+        </PivotItem>
+        <PivotItem Header="Colossians">
+            <ListView ItemClick="ListView_ItemClick" IsItemClickEnabled="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding}" Style="{ThemeResource ListViewItemTextBlockStyle}" Margin="0,0,0,19" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+                <x:String>Chapter 1</x:String>
+                <x:String>Chapter 2</x:String>
+                <x:String>Chapter 3</x:String>
+                <x:String>Chapter 4</x:String>
+            </ListView>
+        </PivotItem>
+        <PivotItem Header="1 Thessalonians">
+            <ListView ItemClick="ListView_ItemClick" IsItemClickEnabled="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding}" Style="{ThemeResource ListViewItemTextBlockStyle}" Margin="0,0,0,19" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+                <x:String>Chapter 1</x:String>
+                <x:String>Chapter 2</x:String>
+                <x:String>Chapter 3</x:String>
+                <x:String>Chapter 4</x:String>
+                <x:String>Chapter 5</x:String>
+            </ListView>
+        </PivotItem>
+        <PivotItem Header="2 Thessalonians">
+            <ListView ItemClick="ListView_ItemClick" IsItemClickEnabled="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding}" Style="{ThemeResource ListViewItemTextBlockStyle}" Margin="0,0,0,19" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+                <x:String>Chapter 1</x:String>
+                <x:String>Chapter 2</x:String>
+                <x:String>Chapter 3</x:String>
+            </ListView>
+        </PivotItem>
+        <PivotItem Header="1 Timothy">
+            <ListView ItemClick="ListView_ItemClick" IsItemClickEnabled="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding}" Style="{ThemeResource ListViewItemTextBlockStyle}" Margin="0,0,0,19" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+                <x:String>Chapter 1</x:String>
+                <x:String>Chapter 2</x:String>
+                <x:String>Chapter 3</x:String>
+                <x:String>Chapter 4</x:String>
+                <x:String>Chapter 5</x:String>
+                <x:String>Chapter 6</x:String>
+            </ListView>
+        </PivotItem>
+        <PivotItem Header="2 Timothy">
+            <ListView ItemClick="ListView_ItemClick" IsItemClickEnabled="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding}" Style="{ThemeResource ListViewItemTextBlockStyle}" Margin="0,0,0,19" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+                <x:String>Chapter 1</x:String>
+                <x:String>Chapter 2</x:String>
+                <x:String>Chapter 3</x:String>
+                <x:String>Chapter 4</x:String>
+            </ListView>
+        </PivotItem>
+        <PivotItem Header="Titus">
+            <ListView ItemClick="ListView_ItemClick" IsItemClickEnabled="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding}" Style="{ThemeResource ListViewItemTextBlockStyle}" Margin="0,0,0,19" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+                <x:String>Chapter 1</x:String>
+                <x:String>Chapter 2</x:String>
+                <x:String>Chapter 3</x:String>
+            </ListView>
+        </PivotItem>
+        <PivotItem Header="Philemon">
+            <ListView ItemClick="ListView_ItemClick" IsItemClickEnabled="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding}" Style="{ThemeResource ListViewItemTextBlockStyle}" Margin="0,0,0,19" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+                <x:String>Chapter 1</x:String>
+            </ListView>
+        </PivotItem>
+        <PivotItem Header="Hebrews">
+            <ListView ItemClick="ListView_ItemClick" IsItemClickEnabled="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding}" Style="{ThemeResource ListViewItemTextBlockStyle}" Margin="0,0,0,19" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+                <x:String>Chapter 1</x:String>
+                <x:String>Chapter 2</x:String>
+                <x:String>Chapter 3</x:String>
+                <x:String>Chapter 4</x:String>
+                <x:String>Chapter 5</x:String>
+                <x:String>Chapter 6</x:String>
+                <x:String>Chapter 7</x:String>
+                <x:String>Chapter 8</x:String>
+                <x:String>Chapter 9</x:String>
+                <x:String>Chapter 10</x:String>
+                <x:String>Chapter 11</x:String>
+                <x:String>Chapter 12</x:String>
+                <x:String>Chapter 13</x:String>
+            </ListView>
+        </PivotItem>
+        <PivotItem Header="James">
+            <ListView ItemClick="ListView_ItemClick" IsItemClickEnabled="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding}" Style="{ThemeResource ListViewItemTextBlockStyle}" Margin="0,0,0,19" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+                <x:String>Chapter 1</x:String>
+                <x:String>Chapter 2</x:String>
+                <x:String>Chapter 3</x:String>
+                <x:String>Chapter 4</x:String>
+                <x:String>Chapter 5</x:String>
+            </ListView>
+        </PivotItem>
+        <PivotItem Header="1 Peter">
+            <ListView ItemClick="ListView_ItemClick" IsItemClickEnabled="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding}" Style="{ThemeResource ListViewItemTextBlockStyle}" Margin="0,0,0,19" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+                <x:String>Chapter 1</x:String>
+                <x:String>Chapter 2</x:String>
+                <x:String>Chapter 3</x:String>
+                <x:String>Chapter 4</x:String>
+                <x:String>Chapter 5</x:String>
+            </ListView>
+        </PivotItem>
+        <PivotItem Header="2 Peter">
+            <ListView ItemClick="ListView_ItemClick" IsItemClickEnabled="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding}" Style="{ThemeResource ListViewItemTextBlockStyle}" Margin="0,0,0,19" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+                <x:String>Chapter 1</x:String>
+                <x:String>Chapter 2</x:String>
+                <x:String>Chapter 3</x:String>
+            </ListView>
+        </PivotItem>
+        <PivotItem Header="1 John">
+            <ListView ItemClick="ListView_ItemClick" IsItemClickEnabled="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding}" Style="{ThemeResource ListViewItemTextBlockStyle}" Margin="0,0,0,19" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+                <x:String>Chapter 1</x:String>
+                <x:String>Chapter 2</x:String>
+                <x:String>Chapter 3</x:String>
+                <x:String>Chapter 4</x:String>
+                <x:String>Chapter 5</x:String>
+            </ListView>
+        </PivotItem>
+        <PivotItem Header="2 John">
+            <ListView ItemClick="ListView_ItemClick" IsItemClickEnabled="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding}" Style="{ThemeResource ListViewItemTextBlockStyle}" Margin="0,0,0,19" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+                <x:String>Chapter 1</x:String>
+            </ListView>
+        </PivotItem>
+        <PivotItem Header="3 John">
+            <ListView ItemClick="ListView_ItemClick" IsItemClickEnabled="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding}" Style="{ThemeResource ListViewItemTextBlockStyle}" Margin="0,0,0,19" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+                <x:String>Chapter 1</x:String>
+            </ListView>
+        </PivotItem>
+        <PivotItem Header="Jude">
+            <ListView ItemClick="ListView_ItemClick" IsItemClickEnabled="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding}" Style="{ThemeResource ListViewItemTextBlockStyle}" Margin="0,0,0,19" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+                <x:String>Chapter 1</x:String>
+            </ListView>
+        </PivotItem>
+        <PivotItem Header="Revelation">
+            <ListView ItemClick="ListView_ItemClick" IsItemClickEnabled="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding}" Style="{ThemeResource ListViewItemTextBlockStyle}" Margin="0,0,0,19" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+                <x:String>Chapter 1</x:String>
+                <x:String>Chapter 2</x:String>
+                <x:String>Chapter 3</x:String>
+                <x:String>Chapter 4</x:String>
+                <x:String>Chapter 5</x:String>
+                <x:String>Chapter 6</x:String>
+                <x:String>Chapter 7</x:String>
+                <x:String>Chapter 8</x:String>
+                <x:String>Chapter 9</x:String>
+                <x:String>Chapter 10</x:String>
+                <x:String>Chapter 11</x:String>
+                <x:String>Chapter 12</x:String>
+                <x:String>Chapter 13</x:String>
+                <x:String>Chapter 14</x:String>
+                <x:String>Chapter 15</x:String>
+                <x:String>Chapter 16</x:String>
+                <x:String>Chapter 17</x:String>
+                <x:String>Chapter 18</x:String>
+                <x:String>Chapter 19</x:String>
+                <x:String>Chapter 20</x:String>
+                <x:String>Chapter 21</x:String>
+                <x:String>Chapter 22</x:String>
+            </ListView>
+        </PivotItem>
+    </Pivot>
+    <Page.BottomAppBar>
+        <CommandBar>
+            <CommandBar.PrimaryCommands>
+                <AppBarButton Name="Previous" Label="previous" Icon="Previous" Click="AppBarButton_Click" />
+                <AppBarButton Name="Play" Label="play" Icon="Play" Click="AppBarButton_Click" />
+                <AppBarButton Name="Next" Label="next" Icon="Next" Click="AppBarButton_Click" />
+            </CommandBar.PrimaryCommands>
+            <CommandBar.SecondaryCommands>
+                <AppBarButton Label="settings" Click="AppBarButton_Click" />
+            </CommandBar.SecondaryCommands>
+        </CommandBar>
+    </Page.BottomAppBar>
+</Page>

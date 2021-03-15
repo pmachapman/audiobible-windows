@@ -1,0 +1,2390 @@
+﻿<Page
+    x:Class="Conglomo.AudioBible.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Conglomo.AudioBible"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <Grid Margin="0 0 0 90" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <local:Player x:Name="MainPlayer" />
+        <SemanticZoom Name="MainZoom" IsZoomedInViewActive="False" IsZoomOutButtonEnabled="False">
+            <SemanticZoom.ZoomedInView>
+                <Hub Name="SecondaryHub" Orientation="Vertical">
+                    <Hub.Header>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Button Name="Back" Click="Back_Click" Style="{StaticResource NavigationBackButtonNormalStyle}" Margin="0 10 0 0"/>
+                            <TextBlock Name="ChaptersTitle" Text="Audio Bible" Grid.Column="1" Style="{StaticResource HeaderTextBlockStyle}" Margin="50 0 0 0" LineStackingStrategy="BlockLineHeight" LineHeight="50" />
+                        </Grid>
+                    </Hub.Header>
+
+                    <HubSection Header="Genesis">
+                        <DataTemplate>
+                            <GridView IsItemClickEnabled="True" ItemClick="GridViewChapter_ItemClick" Tag="0">
+                                <GridView.ItemsPanel>
+                                    <ItemsPanelTemplate>
+                                        <WrapGrid Orientation="Horizontal" MaximumRowsOrColumns="25" />
+                                    </ItemsPanelTemplate>
+                                </GridView.ItemsPanel>
+                                <GridView.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding}" Width="100" Style="{ThemeResource BodyTextBlockStyle}" />
+                                    </DataTemplate>
+                                </GridView.ItemTemplate>
+                                <x:String>Chapter 1</x:String>
+                                <x:String>Chapter 2</x:String>
+                                <x:String>Chapter 3</x:String>
+                                <x:String>Chapter 4</x:String>
+                                <x:String>Chapter 5</x:String>
+                                <x:String>Chapter 6</x:String>
+                                <x:String>Chapter 7</x:String>
+                                <x:String>Chapter 8</x:String>
+                                <x:String>Chapter 9</x:String>
+                                <x:String>Chapter 10</x:String>
+                                <x:String>Chapter 11</x:String>
+                                <x:String>Chapter 12</x:String>
+                                <x:String>Chapter 13</x:String>
+                                <x:String>Chapter 14</x:String>
+                                <x:String>Chapter 15</x:String>
+                                <x:String>Chapter 16</x:String>
+                                <x:String>Chapter 17</x:String>
+                                <x:String>Chapter 18</x:String>
+                                <x:String>Chapter 19</x:String>
+                                <x:String>Chapter 20</x:String>
+                                <x:String>Chapter 21</x:String>
+                                <x:String>Chapter 22</x:String>
+                                <x:String>Chapter 23</x:String>
+                                <x:String>Chapter 24</x:String>
+                                <x:String>Chapter 25</x:String>
+                                <x:String>Chapter 26</x:String>
+                                <x:String>Chapter 27</x:String>
+                                <x:String>Chapter 28</x:String>
+                                <x:String>Chapter 29</x:String>
+                                <x:String>Chapter 30</x:String>
+                                <x:String>Chapter 31</x:String>
+                                <x:String>Chapter 32</x:String>
+                                <x:String>Chapter 33</x:String>
+                                <x:String>Chapter 34</x:String>
+                                <x:String>Chapter 35</x:String>
+                                <x:String>Chapter 36</x:String>
+                                <x:String>Chapter 37</x:String>
+                                <x:String>Chapter 38</x:String>
+                                <x:String>Chapter 39</x:String>
+                                <x:String>Chapter 40</x:String>
+                                <x:String>Chapter 41</x:String>
+                                <x:String>Chapter 42</x:String>
+                                <x:String>Chapter 43</x:String>
+                                <x:String>Chapter 44</x:String>
+                                <x:String>Chapter 45</x:String>
+                                <x:String>Chapter 46</x:String>
+                                <x:String>Chapter 47</x:String>
+                                <x:String>Chapter 48</x:String>
+                                <x:String>Chapter 49</x:String>
+                                <x:String>Chapter 50</x:String>
+                            </GridView>
+                        </DataTemplate>
+                    </HubSection>
+                    <HubSection Header="Exodus">
+                        <DataTemplate>
+                            <GridView IsItemClickEnabled="True" ItemClick="GridViewChapter_ItemClick" Tag="1">
+                                <GridView.ItemsPanel>
+                                    <ItemsPanelTemplate>
+                                        <WrapGrid Orientation="Horizontal" MaximumRowsOrColumns="25" />
+                                    </ItemsPanelTemplate>
+                                </GridView.ItemsPanel>
+                                <GridView.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding}" Width="100" Style="{ThemeResource BodyTextBlockStyle}" />
+                                    </DataTemplate>
+                                </GridView.ItemTemplate>
+                                <x:String>Chapter 1</x:String>
+                                <x:String>Chapter 2</x:String>
+                                <x:String>Chapter 3</x:String>
+                                <x:String>Chapter 4</x:String>
+                                <x:String>Chapter 5</x:String>
+                                <x:String>Chapter 6</x:String>
+                                <x:String>Chapter 7</x:String>
+                                <x:String>Chapter 8</x:String>
+                                <x:String>Chapter 9</x:String>
+                                <x:String>Chapter 10</x:String>
+                                <x:String>Chapter 11</x:String>
+                                <x:String>Chapter 12</x:String>
+                                <x:String>Chapter 13</x:String>
+                                <x:String>Chapter 14</x:String>
+                                <x:String>Chapter 15</x:String>
+                                <x:String>Chapter 16</x:String>
+                                <x:String>Chapter 17</x:String>
+                                <x:String>Chapter 18</x:String>
+                                <x:String>Chapter 19</x:String>
+                                <x:String>Chapter 20</x:String>
+                                <x:String>Chapter 21</x:String>
+                                <x:String>Chapter 22</x:String>
+                                <x:String>Chapter 23</x:String>
+                                <x:String>Chapter 24</x:String>
+                                <x:String>Chapter 25</x:String>
+                                <x:String>Chapter 26</x:String>
+                                <x:String>Chapter 27</x:String>
+                                <x:String>Chapter 28</x:String>
+                                <x:String>Chapter 29</x:String>
+                                <x:String>Chapter 30</x:String>
+                                <x:String>Chapter 31</x:String>
+                                <x:String>Chapter 32</x:String>
+                                <x:String>Chapter 33</x:String>
+                                <x:String>Chapter 34</x:String>
+                                <x:String>Chapter 35</x:String>
+                                <x:String>Chapter 36</x:String>
+                                <x:String>Chapter 37</x:String>
+                                <x:String>Chapter 38</x:String>
+                                <x:String>Chapter 39</x:String>
+                                <x:String>Chapter 40</x:String>
+                            </GridView>
+                        </DataTemplate>
+                    </HubSection>
+                    <HubSection Header="Leviticus">
+                        <DataTemplate>
+                            <GridView IsItemClickEnabled="True" ItemClick="GridViewChapter_ItemClick" Tag="2">
+                                <GridView.ItemsPanel>
+                                    <ItemsPanelTemplate>
+                                        <WrapGrid Orientation="Horizontal" MaximumRowsOrColumns="25" />
+                                    </ItemsPanelTemplate>
+                                </GridView.ItemsPanel>
+                                <GridView.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding}" Width="100" Style="{ThemeResource BodyTextBlockStyle}" />
+                                    </DataTemplate>
+                                </GridView.ItemTemplate>
+                                <x:String>Chapter 1</x:String>
+                                <x:String>Chapter 2</x:String>
+                                <x:String>Chapter 3</x:String>
+                                <x:String>Chapter 4</x:String>
+                                <x:String>Chapter 5</x:String>
+                                <x:String>Chapter 6</x:String>
+                                <x:String>Chapter 7</x:String>
+                                <x:String>Chapter 8</x:String>
+                                <x:String>Chapter 9</x:String>
+                                <x:String>Chapter 10</x:String>
+                                <x:String>Chapter 11</x:String>
+                                <x:String>Chapter 12</x:String>
+                                <x:String>Chapter 13</x:String>
+                                <x:String>Chapter 14</x:String>
+                                <x:String>Chapter 15</x:String>
+                                <x:String>Chapter 16</x:String>
+                                <x:String>Chapter 17</x:String>
+                                <x:String>Chapter 18</x:String>
+                                <x:String>Chapter 19</x:String>
+                                <x:String>Chapter 20</x:String>
+                                <x:String>Chapter 21</x:String>
+                                <x:String>Chapter 22</x:String>
+                                <x:String>Chapter 23</x:String>
+                                <x:String>Chapter 24</x:String>
+                                <x:String>Chapter 25</x:String>
+                                <x:String>Chapter 26</x:String>
+                                <x:String>Chapter 27</x:String>
+                            </GridView>
+                        </DataTemplate>
+                    </HubSection>
+                    <HubSection Header="Numbers">
+                        <DataTemplate>
+                            <GridView IsItemClickEnabled="True" ItemClick="GridViewChapter_ItemClick" Tag="3">
+                                <GridView.ItemsPanel>
+                                    <ItemsPanelTemplate>
+                                        <WrapGrid Orientation="Horizontal" MaximumRowsOrColumns="25" />
+                                    </ItemsPanelTemplate>
+                                </GridView.ItemsPanel>
+                                <GridView.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding}" Width="100" Style="{ThemeResource BodyTextBlockStyle}" />
+                                    </DataTemplate>
+                                </GridView.ItemTemplate>
+                                <x:String>Chapter 1</x:String>
+                                <x:String>Chapter 2</x:String>
+                                <x:String>Chapter 3</x:String>
+                                <x:String>Chapter 4</x:String>
+                                <x:String>Chapter 5</x:String>
+                                <x:String>Chapter 6</x:String>
+                                <x:String>Chapter 7</x:String>
+                                <x:String>Chapter 8</x:String>
+                                <x:String>Chapter 9</x:String>
+                                <x:String>Chapter 10</x:String>
+                                <x:String>Chapter 11</x:String>
+                                <x:String>Chapter 12</x:String>
+                                <x:String>Chapter 13</x:String>
+                                <x:String>Chapter 14</x:String>
+                                <x:String>Chapter 15</x:String>
+                                <x:String>Chapter 16</x:String>
+                                <x:String>Chapter 17</x:String>
+                                <x:String>Chapter 18</x:String>
+                                <x:String>Chapter 19</x:String>
+                                <x:String>Chapter 20</x:String>
+                                <x:String>Chapter 21</x:String>
+                                <x:String>Chapter 22</x:String>
+                                <x:String>Chapter 23</x:String>
+                                <x:String>Chapter 24</x:String>
+                                <x:String>Chapter 25</x:String>
+                                <x:String>Chapter 26</x:String>
+                                <x:String>Chapter 27</x:String>
+                                <x:String>Chapter 28</x:String>
+                                <x:String>Chapter 29</x:String>
+                                <x:String>Chapter 30</x:String>
+                                <x:String>Chapter 31</x:String>
+                                <x:String>Chapter 32</x:String>
+                                <x:String>Chapter 33</x:String>
+                                <x:String>Chapter 34</x:String>
+                                <x:String>Chapter 35</x:String>
+                                <x:String>Chapter 36</x:String>
+                            </GridView>
+                        </DataTemplate>
+                    </HubSection>
+                    <HubSection Header="Deuteronomy">
+                        <DataTemplate>
+                            <GridView IsItemClickEnabled="True" ItemClick="GridViewChapter_ItemClick" Tag="4">
+                                <GridView.ItemsPanel>
+                                    <ItemsPanelTemplate>
+                                        <WrapGrid Orientation="Horizontal" MaximumRowsOrColumns="25" />
+                                    </ItemsPanelTemplate>
+                                </GridView.ItemsPanel>
+                                <GridView.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding}" Width="100" Style="{ThemeResource BodyTextBlockStyle}" />
+                                    </DataTemplate>
+                                </GridView.ItemTemplate>
+                                <x:String>Chapter 1</x:String>
+                                <x:String>Chapter 2</x:String>
+                                <x:String>Chapter 3</x:String>
+                                <x:String>Chapter 4</x:String>
+                                <x:String>Chapter 5</x:String>
+                                <x:String>Chapter 6</x:String>
+                                <x:String>Chapter 7</x:String>
+                                <x:String>Chapter 8</x:String>
+                                <x:String>Chapter 9</x:String>
+                                <x:String>Chapter 10</x:String>
+                                <x:String>Chapter 11</x:String>
+                                <x:String>Chapter 12</x:String>
+                                <x:String>Chapter 13</x:String>
+                                <x:String>Chapter 14</x:String>
+                                <x:String>Chapter 15</x:String>
+                                <x:String>Chapter 16</x:String>
+                                <x:String>Chapter 17</x:String>
+                                <x:String>Chapter 18</x:String>
+                                <x:String>Chapter 19</x:String>
+                                <x:String>Chapter 20</x:String>
+                                <x:String>Chapter 21</x:String>
+                                <x:String>Chapter 22</x:String>
+                                <x:String>Chapter 23</x:String>
+                                <x:String>Chapter 24</x:String>
+                                <x:String>Chapter 25</x:String>
+                                <x:String>Chapter 26</x:String>
+                                <x:String>Chapter 27</x:String>
+                                <x:String>Chapter 28</x:String>
+                                <x:String>Chapter 29</x:String>
+                                <x:String>Chapter 30</x:String>
+                                <x:String>Chapter 31</x:String>
+                                <x:String>Chapter 32</x:String>
+                                <x:String>Chapter 33</x:String>
+                                <x:String>Chapter 34</x:String>
+                            </GridView>
+                        </DataTemplate>
+                    </HubSection>
+                    <HubSection Header="Joshua">
+                        <DataTemplate>
+                            <GridView IsItemClickEnabled="True" ItemClick="GridViewChapter_ItemClick" Tag="5">
+                                <GridView.ItemsPanel>
+                                    <ItemsPanelTemplate>
+                                        <WrapGrid Orientation="Horizontal" MaximumRowsOrColumns="25" />
+                                    </ItemsPanelTemplate>
+                                </GridView.ItemsPanel>
+                                <GridView.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding}" Width="100" Style="{ThemeResource BodyTextBlockStyle}" />
+                                    </DataTemplate>
+                                </GridView.ItemTemplate>
+                                <x:String>Chapter 1</x:String>
+                                <x:String>Chapter 2</x:String>
+                                <x:String>Chapter 3</x:String>
+                                <x:String>Chapter 4</x:String>
+                                <x:String>Chapter 5</x:String>
+                                <x:String>Chapter 6</x:String>
+                                <x:String>Chapter 7</x:String>
+                                <x:String>Chapter 8</x:String>
+                                <x:String>Chapter 9</x:String>
+                                <x:String>Chapter 10</x:String>
+                                <x:String>Chapter 11</x:String>
+                                <x:String>Chapter 12</x:String>
+                                <x:String>Chapter 13</x:String>
+                                <x:String>Chapter 14</x:String>
+                                <x:String>Chapter 15</x:String>
+                                <x:String>Chapter 16</x:String>
+                                <x:String>Chapter 17</x:String>
+                                <x:String>Chapter 18</x:String>
+                                <x:String>Chapter 19</x:String>
+                                <x:String>Chapter 20</x:String>
+                                <x:String>Chapter 21</x:String>
+                                <x:String>Chapter 22</x:String>
+                                <x:String>Chapter 23</x:String>
+                                <x:String>Chapter 24</x:String>
+                            </GridView>
+                        </DataTemplate>
+                    </HubSection>
+                    <HubSection Header="Judges">
+                        <DataTemplate>
+                            <GridView IsItemClickEnabled="True" ItemClick="GridViewChapter_ItemClick" Tag="6">
+                                <GridView.ItemsPanel>
+                                    <ItemsPanelTemplate>
+                                        <WrapGrid Orientation="Horizontal" MaximumRowsOrColumns="25" />
+                                    </ItemsPanelTemplate>
+                                </GridView.ItemsPanel>
+                                <GridView.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding}" Width="100" Style="{ThemeResource BodyTextBlockStyle}" />
+                                    </DataTemplate>
+                                </GridView.ItemTemplate>
+                                <x:String>Chapter 1</x:String>
+                                <x:String>Chapter 2</x:String>
+                                <x:String>Chapter 3</x:String>
+                                <x:String>Chapter 4</x:String>
+                                <x:String>Chapter 5</x:String>
+                                <x:String>Chapter 6</x:String>
+                                <x:String>Chapter 7</x:String>
+                                <x:String>Chapter 8</x:String>
+                                <x:String>Chapter 9</x:String>
+                                <x:String>Chapter 10</x:String>
+                                <x:String>Chapter 11</x:String>
+                                <x:String>Chapter 12</x:String>
+                                <x:String>Chapter 13</x:String>
+                                <x:String>Chapter 14</x:String>
+                                <x:String>Chapter 15</x:String>
+                                <x:String>Chapter 16</x:String>
+                                <x:String>Chapter 17</x:String>
+                                <x:String>Chapter 18</x:String>
+                                <x:String>Chapter 19</x:String>
+                                <x:String>Chapter 20</x:String>
+                                <x:String>Chapter 21</x:String>
+                            </GridView>
+                        </DataTemplate>
+                    </HubSection>
+                    <HubSection Header="Ruth">
+                        <DataTemplate>
+                            <GridView IsItemClickEnabled="True" ItemClick="GridViewChapter_ItemClick" Tag="7">
+                                <GridView.ItemsPanel>
+                                    <ItemsPanelTemplate>
+                                        <WrapGrid Orientation="Horizontal" MaximumRowsOrColumns="25" />
+                                    </ItemsPanelTemplate>
+                                </GridView.ItemsPanel>
+                                <GridView.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding}" Width="100" Style="{ThemeResource BodyTextBlockStyle}" />
+                                    </DataTemplate>
+                                </GridView.ItemTemplate>
+                                <x:String>Chapter 1</x:String>
+                                <x:String>Chapter 2</x:String>
+                                <x:String>Chapter 3</x:String>
+                                <x:String>Chapter 4</x:String>
+                            </GridView>
+                        </DataTemplate>
+                    </HubSection>
+                    <HubSection Header="1 Samuel">
+                        <DataTemplate>
+                            <GridView IsItemClickEnabled="True" ItemClick="GridViewChapter_ItemClick" Tag="8">
+                                <GridView.ItemsPanel>
+                                    <ItemsPanelTemplate>
+                                        <WrapGrid Orientation="Horizontal" MaximumRowsOrColumns="25" />
+                                    </ItemsPanelTemplate>
+                                </GridView.ItemsPanel>
+                                <GridView.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding}" Width="100" Style="{ThemeResource BodyTextBlockStyle}" />
+                                    </DataTemplate>
+                                </GridView.ItemTemplate>
+                                <x:String>Chapter 1</x:String>
+                                <x:String>Chapter 2</x:String>
+                                <x:String>Chapter 3</x:String>
+                                <x:String>Chapter 4</x:String>
+                                <x:String>Chapter 5</x:String>
+                                <x:String>Chapter 6</x:String>
+                                <x:String>Chapter 7</x:String>
+                                <x:String>Chapter 8</x:String>
+                                <x:String>Chapter 9</x:String>
+                                <x:String>Chapter 10</x:String>
+                                <x:String>Chapter 11</x:String>
+                                <x:String>Chapter 12</x:String>
+                                <x:String>Chapter 13</x:String>
+                                <x:String>Chapter 14</x:String>
+                                <x:String>Chapter 15</x:String>
+                                <x:String>Chapter 16</x:String>
+                                <x:String>Chapter 17</x:String>
+                                <x:String>Chapter 18</x:String>
+                                <x:String>Chapter 19</x:String>
+                                <x:String>Chapter 20</x:String>
+                                <x:String>Chapter 21</x:String>
+                                <x:String>Chapter 22</x:String>
+                                <x:String>Chapter 23</x:String>
+                                <x:String>Chapter 24</x:String>
+                                <x:String>Chapter 25</x:String>
+                                <x:String>Chapter 26</x:String>
+                                <x:String>Chapter 27</x:String>
+                                <x:String>Chapter 28</x:String>
+                                <x:String>Chapter 29</x:String>
+                                <x:String>Chapter 30</x:String>
+                                <x:String>Chapter 31</x:String>
+                            </GridView>
+                        </DataTemplate>
+                    </HubSection>
+                    <HubSection Header="2 Samuel">
+                        <DataTemplate>
+                            <GridView IsItemClickEnabled="True" ItemClick="GridViewChapter_ItemClick" Tag="9">
+                                <GridView.ItemsPanel>
+                                    <ItemsPanelTemplate>
+                                        <WrapGrid Orientation="Horizontal" MaximumRowsOrColumns="25" />
+                                    </ItemsPanelTemplate>
+                                </GridView.ItemsPanel>
+                                <GridView.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding}" Width="100" Style="{ThemeResource BodyTextBlockStyle}" />
+                                    </DataTemplate>
+                                </GridView.ItemTemplate>
+                                <x:String>Chapter 1</x:String>
+                                <x:String>Chapter 2</x:String>
+                                <x:String>Chapter 3</x:String>
+                                <x:String>Chapter 4</x:String>
+                                <x:String>Chapter 5</x:String>
+                                <x:String>Chapter 6</x:String>
+                                <x:String>Chapter 7</x:String>
+                                <x:String>Chapter 8</x:String>
+                                <x:String>Chapter 9</x:String>
+                                <x:String>Chapter 10</x:String>
+                                <x:String>Chapter 11</x:String>
+                                <x:String>Chapter 12</x:String>
+                                <x:String>Chapter 13</x:String>
+                                <x:String>Chapter 14</x:String>
+                                <x:String>Chapter 15</x:String>
+                                <x:String>Chapter 16</x:String>
+                                <x:String>Chapter 17</x:String>
+                                <x:String>Chapter 18</x:String>
+                                <x:String>Chapter 19</x:String>
+                                <x:String>Chapter 20</x:String>
+                                <x:String>Chapter 21</x:String>
+                                <x:String>Chapter 22</x:String>
+                                <x:String>Chapter 23</x:String>
+                                <x:String>Chapter 24</x:String>
+                            </GridView>
+                        </DataTemplate>
+                    </HubSection>
+                    <HubSection Header="1 Kings">
+                        <DataTemplate>
+                            <GridView IsItemClickEnabled="True" ItemClick="GridViewChapter_ItemClick" Tag="10">
+                                <GridView.ItemsPanel>
+                                    <ItemsPanelTemplate>
+                                        <WrapGrid Orientation="Horizontal" MaximumRowsOrColumns="25" />
+                                    </ItemsPanelTemplate>
+                                </GridView.ItemsPanel>
+                                <GridView.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding}" Width="100" Style="{ThemeResource BodyTextBlockStyle}" />
+                                    </DataTemplate>
+                                </GridView.ItemTemplate>
+                                <x:String>Chapter 1</x:String>
+                                <x:String>Chapter 2</x:String>
+                                <x:String>Chapter 3</x:String>
+                                <x:String>Chapter 4</x:String>
+                                <x:String>Chapter 5</x:String>
+                                <x:String>Chapter 6</x:String>
+                                <x:String>Chapter 7</x:String>
+                                <x:String>Chapter 8</x:String>
+                                <x:String>Chapter 9</x:String>
+                                <x:String>Chapter 10</x:String>
+                                <x:String>Chapter 11</x:String>
+                                <x:String>Chapter 12</x:String>
+                                <x:String>Chapter 13</x:String>
+                                <x:String>Chapter 14</x:String>
+                                <x:String>Chapter 15</x:String>
+                                <x:String>Chapter 16</x:String>
+                                <x:String>Chapter 17</x:String>
+                                <x:String>Chapter 18</x:String>
+                                <x:String>Chapter 19</x:String>
+                                <x:String>Chapter 20</x:String>
+                                <x:String>Chapter 21</x:String>
+                                <x:String>Chapter 22</x:String>
+                            </GridView>
+                        </DataTemplate>
+                    </HubSection>
+                    <HubSection Header="2 Kings">
+                        <DataTemplate>
+                            <GridView IsItemClickEnabled="True" ItemClick="GridViewChapter_ItemClick" Tag="11">
+                                <GridView.ItemsPanel>
+                                    <ItemsPanelTemplate>
+                                        <WrapGrid Orientation="Horizontal" MaximumRowsOrColumns="25" />
+                                    </ItemsPanelTemplate>
+                                </GridView.ItemsPanel>
+                                <GridView.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding}" Width="100" Style="{ThemeResource BodyTextBlockStyle}" />
+                                    </DataTemplate>
+                                </GridView.ItemTemplate>
+                                <x:String>Chapter 1</x:String>
+                                <x:String>Chapter 2</x:String>
+                                <x:String>Chapter 3</x:String>
+                                <x:String>Chapter 4</x:String>
+                                <x:String>Chapter 5</x:String>
+                                <x:String>Chapter 6</x:String>
+                                <x:String>Chapter 7</x:String>
+                                <x:String>Chapter 8</x:String>
+                                <x:String>Chapter 9</x:String>
+                                <x:String>Chapter 10</x:String>
+                                <x:String>Chapter 11</x:String>
+                                <x:String>Chapter 12</x:String>
+                                <x:String>Chapter 13</x:String>
+                                <x:String>Chapter 14</x:String>
+                                <x:String>Chapter 15</x:String>
+                                <x:String>Chapter 16</x:String>
+                                <x:String>Chapter 17</x:String>
+                                <x:String>Chapter 18</x:String>
+                                <x:String>Chapter 19</x:String>
+                                <x:String>Chapter 20</x:String>
+                                <x:String>Chapter 21</x:String>
+                                <x:String>Chapter 22</x:String>
+                                <x:String>Chapter 23</x:String>
+                                <x:String>Chapter 24</x:String>
+                                <x:String>Chapter 25</x:String>
+                            </GridView>
+                        </DataTemplate>
+                    </HubSection>
+                    <HubSection Header="1 Chronicles">
+                        <DataTemplate>
+                            <GridView IsItemClickEnabled="True" ItemClick="GridViewChapter_ItemClick" Tag="12">
+                                <GridView.ItemsPanel>
+                                    <ItemsPanelTemplate>
+                                        <WrapGrid Orientation="Horizontal" MaximumRowsOrColumns="25" />
+                                    </ItemsPanelTemplate>
+                                </GridView.ItemsPanel>
+                                <GridView.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding}" Width="100" Style="{ThemeResource BodyTextBlockStyle}" />
+                                    </DataTemplate>
+                                </GridView.ItemTemplate>
+                                <x:String>Chapter 1</x:String>
+                                <x:String>Chapter 2</x:String>
+                                <x:String>Chapter 3</x:String>
+                                <x:String>Chapter 4</x:String>
+                                <x:String>Chapter 5</x:String>
+                                <x:String>Chapter 6</x:String>
+                                <x:String>Chapter 7</x:String>
+                                <x:String>Chapter 8</x:String>
+                                <x:String>Chapter 9</x:String>
+                                <x:String>Chapter 10</x:String>
+                                <x:String>Chapter 11</x:String>
+                                <x:String>Chapter 12</x:String>
+                                <x:String>Chapter 13</x:String>
+                                <x:String>Chapter 14</x:String>
+                                <x:String>Chapter 15</x:String>
+                                <x:String>Chapter 16</x:String>
+                                <x:String>Chapter 17</x:String>
+                                <x:String>Chapter 18</x:String>
+                                <x:String>Chapter 19</x:String>
+                                <x:String>Chapter 20</x:String>
+                                <x:String>Chapter 21</x:String>
+                                <x:String>Chapter 22</x:String>
+                                <x:String>Chapter 23</x:String>
+                                <x:String>Chapter 24</x:String>
+                                <x:String>Chapter 25</x:String>
+                                <x:String>Chapter 26</x:String>
+                                <x:String>Chapter 27</x:String>
+                                <x:String>Chapter 28</x:String>
+                                <x:String>Chapter 29</x:String>
+                            </GridView>
+                        </DataTemplate>
+                    </HubSection>
+                    <HubSection Header="2 Chronicles">
+                        <DataTemplate>
+                            <GridView IsItemClickEnabled="True" ItemClick="GridViewChapter_ItemClick" Tag="13">
+                                <GridView.ItemsPanel>
+                                    <ItemsPanelTemplate>
+                                        <WrapGrid Orientation="Horizontal" MaximumRowsOrColumns="25" />
+                                    </ItemsPanelTemplate>
+                                </GridView.ItemsPanel>
+                                <GridView.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding}" Width="100" Style="{ThemeResource BodyTextBlockStyle}" />
+                                    </DataTemplate>
+                                </GridView.ItemTemplate>
+                                <x:String>Chapter 1</x:String>
+                                <x:String>Chapter 2</x:String>
+                                <x:String>Chapter 3</x:String>
+                                <x:String>Chapter 4</x:String>
+                                <x:String>Chapter 5</x:String>
+                                <x:String>Chapter 6</x:String>
+                                <x:String>Chapter 7</x:String>
+                                <x:String>Chapter 8</x:String>
+                                <x:String>Chapter 9</x:String>
+                                <x:String>Chapter 10</x:String>
+                                <x:String>Chapter 11</x:String>
+                                <x:String>Chapter 12</x:String>
+                                <x:String>Chapter 13</x:String>
+                                <x:String>Chapter 14</x:String>
+                                <x:String>Chapter 15</x:String>
+                                <x:String>Chapter 16</x:String>
+                                <x:String>Chapter 17</x:String>
+                                <x:String>Chapter 18</x:String>
+                                <x:String>Chapter 19</x:String>
+                                <x:String>Chapter 20</x:String>
+                                <x:String>Chapter 21</x:String>
+                                <x:String>Chapter 22</x:String>
+                                <x:String>Chapter 23</x:String>
+                                <x:String>Chapter 24</x:String>
+                                <x:String>Chapter 25</x:String>
+                                <x:String>Chapter 26</x:String>
+                                <x:String>Chapter 27</x:String>
+                                <x:String>Chapter 28</x:String>
+                                <x:String>Chapter 29</x:String>
+                                <x:String>Chapter 30</x:String>
+                                <x:String>Chapter 31</x:String>
+                                <x:String>Chapter 32</x:String>
+                                <x:String>Chapter 33</x:String>
+                                <x:String>Chapter 34</x:String>
+                                <x:String>Chapter 35</x:String>
+                                <x:String>Chapter 36</x:String>
+                            </GridView>
+                        </DataTemplate>
+                    </HubSection>
+                    <HubSection Header="Ezra">
+                        <DataTemplate>
+                            <GridView IsItemClickEnabled="True" ItemClick="GridViewChapter_ItemClick" Tag="14">
+                                <GridView.ItemsPanel>
+                                    <ItemsPanelTemplate>
+                                        <WrapGrid Orientation="Horizontal" MaximumRowsOrColumns="25" />
+                                    </ItemsPanelTemplate>
+                                </GridView.ItemsPanel>
+                                <GridView.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding}" Width="100" Style="{ThemeResource BodyTextBlockStyle}" />
+                                    </DataTemplate>
+                                </GridView.ItemTemplate>
+                                <x:String>Chapter 1</x:String>
+                                <x:String>Chapter 2</x:String>
+                                <x:String>Chapter 3</x:String>
+                                <x:String>Chapter 4</x:String>
+                                <x:String>Chapter 5</x:String>
+                                <x:String>Chapter 6</x:String>
+                                <x:String>Chapter 7</x:String>
+                                <x:String>Chapter 8</x:String>
+                                <x:String>Chapter 9</x:String>
+                                <x:String>Chapter 10</x:String>
+                            </GridView>
+                        </DataTemplate>
+                    </HubSection>
+                    <HubSection Header="Nehemiah">
+                        <DataTemplate>
+                            <GridView IsItemClickEnabled="True" ItemClick="GridViewChapter_ItemClick" Tag="15">
+                                <GridView.ItemsPanel>
+                                    <ItemsPanelTemplate>
+                                        <WrapGrid Orientation="Horizontal" MaximumRowsOrColumns="25" />
+                                    </ItemsPanelTemplate>
+                                </GridView.ItemsPanel>
+                                <GridView.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding}" Width="100" Style="{ThemeResource BodyTextBlockStyle}" />
+                                    </DataTemplate>
+                                </GridView.ItemTemplate>
+                                <x:String>Chapter 1</x:String>
+                                <x:String>Chapter 2</x:String>
+                                <x:String>Chapter 3</x:String>
+                                <x:String>Chapter 4</x:String>
+                                <x:String>Chapter 5</x:String>
+                                <x:String>Chapter 6</x:String>
+                                <x:String>Chapter 7</x:String>
+                                <x:String>Chapter 8</x:String>
+                                <x:String>Chapter 9</x:String>
+                                <x:String>Chapter 10</x:String>
+                                <x:String>Chapter 11</x:String>
+                                <x:String>Chapter 12</x:String>
+                                <x:String>Chapter 13</x:String>
+                            </GridView>
+                        </DataTemplate>
+                    </HubSection>
+                    <HubSection Header="Esther">
+                        <DataTemplate>
+                            <GridView IsItemClickEnabled="True" ItemClick="GridViewChapter_ItemClick" Tag="16">
+                                <GridView.ItemsPanel>
+                                    <ItemsPanelTemplate>
+                                        <WrapGrid Orientation="Horizontal" MaximumRowsOrColumns="25" />
+                                    </ItemsPanelTemplate>
+                                </GridView.ItemsPanel>
+                                <GridView.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding}" Width="100" Style="{ThemeResource BodyTextBlockStyle}" />
+                                    </DataTemplate>
+                                </GridView.ItemTemplate>
+                                <x:String>Chapter 1</x:String>
+                                <x:String>Chapter 2</x:String>
+                                <x:String>Chapter 3</x:String>
+                                <x:String>Chapter 4</x:String>
+                                <x:String>Chapter 5</x:String>
+                                <x:String>Chapter 6</x:String>
+                                <x:String>Chapter 7</x:String>
+                                <x:String>Chapter 8</x:String>
+                                <x:String>Chapter 9</x:String>
+                                <x:String>Chapter 10</x:String>
+                            </GridView>
+                        </DataTemplate>
+                    </HubSection>
+                    <HubSection Header="Job">
+                        <DataTemplate>
+                            <GridView IsItemClickEnabled="True" ItemClick="GridViewChapter_ItemClick" Tag="17">
+                                <GridView.ItemsPanel>
+                                    <ItemsPanelTemplate>
+                                        <WrapGrid Orientation="Horizontal" MaximumRowsOrColumns="25" />
+                                    </ItemsPanelTemplate>
+                                </GridView.ItemsPanel>
+                                <GridView.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding}" Width="100" Style="{ThemeResource BodyTextBlockStyle}" />
+                                    </DataTemplate>
+                                </GridView.ItemTemplate>
+                                <x:String>Chapter 1</x:String>
+                                <x:String>Chapter 2</x:String>
+                                <x:String>Chapter 3</x:String>
+                                <x:String>Chapter 4</x:String>
+                                <x:String>Chapter 5</x:String>
+                                <x:String>Chapter 6</x:String>
+                                <x:String>Chapter 7</x:String>
+                                <x:String>Chapter 8</x:String>
+                                <x:String>Chapter 9</x:String>
+                                <x:String>Chapter 10</x:String>
+                                <x:String>Chapter 11</x:String>
+                                <x:String>Chapter 12</x:String>
+                                <x:String>Chapter 13</x:String>
+                                <x:String>Chapter 14</x:String>
+                                <x:String>Chapter 15</x:String>
+                                <x:String>Chapter 16</x:String>
+                                <x:String>Chapter 17</x:String>
+                                <x:String>Chapter 18</x:String>
+                                <x:String>Chapter 19</x:String>
+                                <x:String>Chapter 20</x:String>
+                                <x:String>Chapter 21</x:String>
+                                <x:String>Chapter 22</x:String>
+                                <x:String>Chapter 23</x:String>
+                                <x:String>Chapter 24</x:String>
+                                <x:String>Chapter 25</x:String>
+                                <x:String>Chapter 26</x:String>
+                                <x:String>Chapter 27</x:String>
+                                <x:String>Chapter 28</x:String>
+                                <x:String>Chapter 29</x:String>
+                                <x:String>Chapter 30</x:String>
+                                <x:String>Chapter 31</x:String>
+                                <x:String>Chapter 32</x:String>
+                                <x:String>Chapter 33</x:String>
+                                <x:String>Chapter 34</x:String>
+                                <x:String>Chapter 35</x:String>
+                                <x:String>Chapter 36</x:String>
+                                <x:String>Chapter 37</x:String>
+                                <x:String>Chapter 38</x:String>
+                                <x:String>Chapter 39</x:String>
+                                <x:String>Chapter 40</x:String>
+                                <x:String>Chapter 41</x:String>
+                                <x:String>Chapter 42</x:String>
+                            </GridView>
+                        </DataTemplate>
+                    </HubSection>
+                    <HubSection Header="Psalms">
+                        <DataTemplate>
+                            <GridView IsItemClickEnabled="True" ItemClick="GridViewChapter_ItemClick" Tag="18">
+                                <GridView.ItemsPanel>
+                                    <ItemsPanelTemplate>
+                                        <WrapGrid Orientation="Horizontal" MaximumRowsOrColumns="25" />
+                                    </ItemsPanelTemplate>
+                                </GridView.ItemsPanel>
+                                <GridView.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding}" Width="100" Style="{ThemeResource BodyTextBlockStyle}" />
+                                    </DataTemplate>
+                                </GridView.ItemTemplate>
+                                <x:String>Chapter 1</x:String>
+                                <x:String>Chapter 2</x:String>
+                                <x:String>Chapter 3</x:String>
+                                <x:String>Chapter 4</x:String>
+                                <x:String>Chapter 5</x:String>
+                                <x:String>Chapter 6</x:String>
+                                <x:String>Chapter 7</x:String>
+                                <x:String>Chapter 8</x:String>
+                                <x:String>Chapter 9</x:String>
+                                <x:String>Chapter 10</x:String>
+                                <x:String>Chapter 11</x:String>
+                                <x:String>Chapter 12</x:String>
+                                <x:String>Chapter 13</x:String>
+                                <x:String>Chapter 14</x:String>
+                                <x:String>Chapter 15</x:String>
+                                <x:String>Chapter 16</x:String>
+                                <x:String>Chapter 17</x:String>
+                                <x:String>Chapter 18</x:String>
+                                <x:String>Chapter 19</x:String>
+                                <x:String>Chapter 20</x:String>
+                                <x:String>Chapter 21</x:String>
+                                <x:String>Chapter 22</x:String>
+                                <x:String>Chapter 23</x:String>
+                                <x:String>Chapter 24</x:String>
+                                <x:String>Chapter 25</x:String>
+                                <x:String>Chapter 26</x:String>
+                                <x:String>Chapter 27</x:String>
+                                <x:String>Chapter 28</x:String>
+                                <x:String>Chapter 29</x:String>
+                                <x:String>Chapter 30</x:String>
+                                <x:String>Chapter 31</x:String>
+                                <x:String>Chapter 32</x:String>
+                                <x:String>Chapter 33</x:String>
+                                <x:String>Chapter 34</x:String>
+                                <x:String>Chapter 35</x:String>
+                                <x:String>Chapter 36</x:String>
+                                <x:String>Chapter 37</x:String>
+                                <x:String>Chapter 38</x:String>
+                                <x:String>Chapter 39</x:String>
+                                <x:String>Chapter 40</x:String>
+                                <x:String>Chapter 41</x:String>
+                                <x:String>Chapter 42</x:String>
+                                <x:String>Chapter 43</x:String>
+                                <x:String>Chapter 44</x:String>
+                                <x:String>Chapter 45</x:String>
+                                <x:String>Chapter 46</x:String>
+                                <x:String>Chapter 47</x:String>
+                                <x:String>Chapter 48</x:String>
+                                <x:String>Chapter 49</x:String>
+                                <x:String>Chapter 50</x:String>
+                                <x:String>Chapter 51</x:String>
+                                <x:String>Chapter 52</x:String>
+                                <x:String>Chapter 53</x:String>
+                                <x:String>Chapter 54</x:String>
+                                <x:String>Chapter 55</x:String>
+                                <x:String>Chapter 56</x:String>
+                                <x:String>Chapter 57</x:String>
+                                <x:String>Chapter 58</x:String>
+                                <x:String>Chapter 59</x:String>
+                                <x:String>Chapter 60</x:String>
+                                <x:String>Chapter 61</x:String>
+                                <x:String>Chapter 62</x:String>
+                                <x:String>Chapter 63</x:String>
+                                <x:String>Chapter 64</x:String>
+                                <x:String>Chapter 65</x:String>
+                                <x:String>Chapter 66</x:String>
+                                <x:String>Chapter 67</x:String>
+                                <x:String>Chapter 68</x:String>
+                                <x:String>Chapter 69</x:String>
+                                <x:String>Chapter 70</x:String>
+                                <x:String>Chapter 71</x:String>
+                                <x:String>Chapter 72</x:String>
+                                <x:String>Chapter 73</x:String>
+                                <x:String>Chapter 74</x:String>
+                                <x:String>Chapter 75</x:String>
+                                <x:String>Chapter 76</x:String>
+                                <x:String>Chapter 77</x:String>
+                                <x:String>Chapter 78</x:String>
+                                <x:String>Chapter 79</x:String>
+                                <x:String>Chapter 80</x:String>
+                                <x:String>Chapter 81</x:String>
+                                <x:String>Chapter 82</x:String>
+                                <x:String>Chapter 83</x:String>
+                                <x:String>Chapter 84</x:String>
+                                <x:String>Chapter 85</x:String>
+                                <x:String>Chapter 86</x:String>
+                                <x:String>Chapter 87</x:String>
+                                <x:String>Chapter 88</x:String>
+                                <x:String>Chapter 89</x:String>
+                                <x:String>Chapter 90</x:String>
+                                <x:String>Chapter 91</x:String>
+                                <x:String>Chapter 92</x:String>
+                                <x:String>Chapter 93</x:String>
+                                <x:String>Chapter 94</x:String>
+                                <x:String>Chapter 95</x:String>
+                                <x:String>Chapter 96</x:String>
+                                <x:String>Chapter 97</x:String>
+                                <x:String>Chapter 98</x:String>
+                                <x:String>Chapter 99</x:String>
+                                <x:String>Chapter 100</x:String>
+                                <x:String>Chapter 101</x:String>
+                                <x:String>Chapter 102</x:String>
+                                <x:String>Chapter 103</x:String>
+                                <x:String>Chapter 104</x:String>
+                                <x:String>Chapter 105</x:String>
+                                <x:String>Chapter 106</x:String>
+                                <x:String>Chapter 107</x:String>
+                                <x:String>Chapter 108</x:String>
+                                <x:String>Chapter 109</x:String>
+                                <x:String>Chapter 110</x:String>
+                                <x:String>Chapter 111</x:String>
+                                <x:String>Chapter 112</x:String>
+                                <x:String>Chapter 113</x:String>
+                                <x:String>Chapter 114</x:String>
+                                <x:String>Chapter 115</x:String>
+                                <x:String>Chapter 116</x:String>
+                                <x:String>Chapter 117</x:String>
+                                <x:String>Chapter 118</x:String>
+                                <x:String>Chapter 119</x:String>
+                                <x:String>Chapter 120</x:String>
+                                <x:String>Chapter 121</x:String>
+                                <x:String>Chapter 122</x:String>
+                                <x:String>Chapter 123</x:String>
+                                <x:String>Chapter 124</x:String>
+                                <x:String>Chapter 125</x:String>
+                                <x:String>Chapter 126</x:String>
+                                <x:String>Chapter 127</x:String>
+                                <x:String>Chapter 128</x:String>
+                                <x:String>Chapter 129</x:String>
+                                <x:String>Chapter 130</x:String>
+                                <x:String>Chapter 131</x:String>
+                                <x:String>Chapter 132</x:String>
+                                <x:String>Chapter 133</x:String>
+                                <x:String>Chapter 134</x:String>
+                                <x:String>Chapter 135</x:String>
+                                <x:String>Chapter 136</x:String>
+                                <x:String>Chapter 137</x:String>
+                                <x:String>Chapter 138</x:String>
+                                <x:String>Chapter 139</x:String>
+                                <x:String>Chapter 140</x:String>
+                                <x:String>Chapter 141</x:String>
+                                <x:String>Chapter 142</x:String>
+                                <x:String>Chapter 143</x:String>
+                                <x:String>Chapter 144</x:String>
+                                <x:String>Chapter 145</x:String>
+                                <x:String>Chapter 146</x:String>
+                                <x:String>Chapter 147</x:String>
+                                <x:String>Chapter 148</x:String>
+                                <x:String>Chapter 149</x:String>
+                                <x:String>Chapter 150</x:String>
+                            </GridView>
+                        </DataTemplate>
+                    </HubSection>
+                    <HubSection Header="Proverbs">
+                        <DataTemplate>
+                            <GridView IsItemClickEnabled="True" ItemClick="GridViewChapter_ItemClick" Tag="19">
+                                <GridView.ItemsPanel>
+                                    <ItemsPanelTemplate>
+                                        <WrapGrid Orientation="Horizontal" MaximumRowsOrColumns="25" />
+                                    </ItemsPanelTemplate>
+                                </GridView.ItemsPanel>
+                                <GridView.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding}" Width="100" Style="{ThemeResource BodyTextBlockStyle}" />
+                                    </DataTemplate>
+                                </GridView.ItemTemplate>
+                                <x:String>Chapter 1</x:String>
+                                <x:String>Chapter 2</x:String>
+                                <x:String>Chapter 3</x:String>
+                                <x:String>Chapter 4</x:String>
+                                <x:String>Chapter 5</x:String>
+                                <x:String>Chapter 6</x:String>
+                                <x:String>Chapter 7</x:String>
+                                <x:String>Chapter 8</x:String>
+                                <x:String>Chapter 9</x:String>
+                                <x:String>Chapter 10</x:String>
+                                <x:String>Chapter 11</x:String>
+                                <x:String>Chapter 12</x:String>
+                                <x:String>Chapter 13</x:String>
+                                <x:String>Chapter 14</x:String>
+                                <x:String>Chapter 15</x:String>
+                                <x:String>Chapter 16</x:String>
+                                <x:String>Chapter 17</x:String>
+                                <x:String>Chapter 18</x:String>
+                                <x:String>Chapter 19</x:String>
+                                <x:String>Chapter 20</x:String>
+                                <x:String>Chapter 21</x:String>
+                                <x:String>Chapter 22</x:String>
+                                <x:String>Chapter 23</x:String>
+                                <x:String>Chapter 24</x:String>
+                                <x:String>Chapter 25</x:String>
+                                <x:String>Chapter 26</x:String>
+                                <x:String>Chapter 27</x:String>
+                                <x:String>Chapter 28</x:String>
+                                <x:String>Chapter 29</x:String>
+                                <x:String>Chapter 30</x:String>
+                                <x:String>Chapter 31</x:String>
+                            </GridView>
+                        </DataTemplate>
+                    </HubSection>
+                    <HubSection Header="Ecclesiastes">
+                        <DataTemplate>
+                            <GridView IsItemClickEnabled="True" ItemClick="GridViewChapter_ItemClick" Tag="20">
+                                <GridView.ItemsPanel>
+                                    <ItemsPanelTemplate>
+                                        <WrapGrid Orientation="Horizontal" MaximumRowsOrColumns="25" />
+                                    </ItemsPanelTemplate>
+                                </GridView.ItemsPanel>
+                                <GridView.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding}" Width="100" Style="{ThemeResource BodyTextBlockStyle}" />
+                                    </DataTemplate>
+                                </GridView.ItemTemplate>
+                                <x:String>Chapter 1</x:String>
+                                <x:String>Chapter 2</x:String>
+                                <x:String>Chapter 3</x:String>
+                                <x:String>Chapter 4</x:String>
+                                <x:String>Chapter 5</x:String>
+                                <x:String>Chapter 6</x:String>
+                                <x:String>Chapter 7</x:String>
+                                <x:String>Chapter 8</x:String>
+                                <x:String>Chapter 9</x:String>
+                                <x:String>Chapter 10</x:String>
+                                <x:String>Chapter 11</x:String>
+                                <x:String>Chapter 12</x:String>
+                            </GridView>
+                        </DataTemplate>
+                    </HubSection>
+                    <HubSection Header="Song of Solomon">
+                        <DataTemplate>
+                            <GridView IsItemClickEnabled="True" ItemClick="GridViewChapter_ItemClick" Tag="21">
+                                <GridView.ItemsPanel>
+                                    <ItemsPanelTemplate>
+                                        <WrapGrid Orientation="Horizontal" MaximumRowsOrColumns="25" />
+                                    </ItemsPanelTemplate>
+                                </GridView.ItemsPanel>
+                                <GridView.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding}" Width="100" Style="{ThemeResource BodyTextBlockStyle}" />
+                                    </DataTemplate>
+                                </GridView.ItemTemplate>
+                                <x:String>Chapter 1</x:String>
+                                <x:String>Chapter 2</x:String>
+                                <x:String>Chapter 3</x:String>
+                                <x:String>Chapter 4</x:String>
+                                <x:String>Chapter 5</x:String>
+                                <x:String>Chapter 6</x:String>
+                                <x:String>Chapter 7</x:String>
+                                <x:String>Chapter 8</x:String>
+                            </GridView>
+                        </DataTemplate>
+                    </HubSection>
+                    <HubSection Header="Isaiah">
+                        <DataTemplate>
+                            <GridView IsItemClickEnabled="True" ItemClick="GridViewChapter_ItemClick" Tag="22">
+                                <GridView.ItemsPanel>
+                                    <ItemsPanelTemplate>
+                                        <WrapGrid Orientation="Horizontal" MaximumRowsOrColumns="25" />
+                                    </ItemsPanelTemplate>
+                                </GridView.ItemsPanel>
+                                <GridView.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding}" Width="100" Style="{ThemeResource BodyTextBlockStyle}" />
+                                    </DataTemplate>
+                                </GridView.ItemTemplate>
+                                <x:String>Chapter 1</x:String>
+                                <x:String>Chapter 2</x:String>
+                                <x:String>Chapter 3</x:String>
+                                <x:String>Chapter 4</x:String>
+                                <x:String>Chapter 5</x:String>
+                                <x:String>Chapter 6</x:String>
+                                <x:String>Chapter 7</x:String>
+                                <x:String>Chapter 8</x:String>
+                                <x:String>Chapter 9</x:String>
+                                <x:String>Chapter 10</x:String>
+                                <x:String>Chapter 11</x:String>
+                                <x:String>Chapter 12</x:String>
+                                <x:String>Chapter 13</x:String>
+                                <x:String>Chapter 14</x:String>
+                                <x:String>Chapter 15</x:String>
+                                <x:String>Chapter 16</x:String>
+                                <x:String>Chapter 17</x:String>
+                                <x:String>Chapter 18</x:String>
+                                <x:String>Chapter 19</x:String>
+                                <x:String>Chapter 20</x:String>
+                                <x:String>Chapter 21</x:String>
+                                <x:String>Chapter 22</x:String>
+                                <x:String>Chapter 23</x:String>
+                                <x:String>Chapter 24</x:String>
+                                <x:String>Chapter 25</x:String>
+                                <x:String>Chapter 26</x:String>
+                                <x:String>Chapter 27</x:String>
+                                <x:String>Chapter 28</x:String>
+                                <x:String>Chapter 29</x:String>
+                                <x:String>Chapter 30</x:String>
+                                <x:String>Chapter 31</x:String>
+                                <x:String>Chapter 32</x:String>
+                                <x:String>Chapter 33</x:String>
+                                <x:String>Chapter 34</x:String>
+                                <x:String>Chapter 35</x:String>
+                                <x:String>Chapter 36</x:String>
+                                <x:String>Chapter 37</x:String>
+                                <x:String>Chapter 38</x:String>
+                                <x:String>Chapter 39</x:String>
+                                <x:String>Chapter 40</x:String>
+                                <x:String>Chapter 41</x:String>
+                                <x:String>Chapter 42</x:String>
+                                <x:String>Chapter 43</x:String>
+                                <x:String>Chapter 44</x:String>
+                                <x:String>Chapter 45</x:String>
+                                <x:String>Chapter 46</x:String>
+                                <x:String>Chapter 47</x:String>
+                                <x:String>Chapter 48</x:String>
+                                <x:String>Chapter 49</x:String>
+                                <x:String>Chapter 50</x:String>
+                                <x:String>Chapter 51</x:String>
+                                <x:String>Chapter 52</x:String>
+                                <x:String>Chapter 53</x:String>
+                                <x:String>Chapter 54</x:String>
+                                <x:String>Chapter 55</x:String>
+                                <x:String>Chapter 56</x:String>
+                                <x:String>Chapter 57</x:String>
+                                <x:String>Chapter 58</x:String>
+                                <x:String>Chapter 59</x:String>
+                                <x:String>Chapter 60</x:String>
+                                <x:String>Chapter 61</x:String>
+                                <x:String>Chapter 62</x:String>
+                                <x:String>Chapter 63</x:String>
+                                <x:String>Chapter 64</x:String>
+                                <x:String>Chapter 65</x:String>
+                                <x:String>Chapter 66</x:String>
+                            </GridView>
+                        </DataTemplate>
+                    </HubSection>
+                    <HubSection Header="Jeremiah">
+                        <DataTemplate>
+                            <GridView IsItemClickEnabled="True" ItemClick="GridViewChapter_ItemClick" Tag="23">
+                                <GridView.ItemsPanel>
+                                    <ItemsPanelTemplate>
+                                        <WrapGrid Orientation="Horizontal" MaximumRowsOrColumns="25" />
+                                    </ItemsPanelTemplate>
+                                </GridView.ItemsPanel>
+                                <GridView.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding}" Width="100" Style="{ThemeResource BodyTextBlockStyle}" />
+                                    </DataTemplate>
+                                </GridView.ItemTemplate>
+                                <x:String>Chapter 1</x:String>
+                                <x:String>Chapter 2</x:String>
+                                <x:String>Chapter 3</x:String>
+                                <x:String>Chapter 4</x:String>
+                                <x:String>Chapter 5</x:String>
+                                <x:String>Chapter 6</x:String>
+                                <x:String>Chapter 7</x:String>
+                                <x:String>Chapter 8</x:String>
+                                <x:String>Chapter 9</x:String>
+                                <x:String>Chapter 10</x:String>
+                                <x:String>Chapter 11</x:String>
+                                <x:String>Chapter 12</x:String>
+                                <x:String>Chapter 13</x:String>
+                                <x:String>Chapter 14</x:String>
+                                <x:String>Chapter 15</x:String>
+                                <x:String>Chapter 16</x:String>
+                                <x:String>Chapter 17</x:String>
+                                <x:String>Chapter 18</x:String>
+                                <x:String>Chapter 19</x:String>
+                                <x:String>Chapter 20</x:String>
+                                <x:String>Chapter 21</x:String>
+                                <x:String>Chapter 22</x:String>
+                                <x:String>Chapter 23</x:String>
+                                <x:String>Chapter 24</x:String>
+                                <x:String>Chapter 25</x:String>
+                                <x:String>Chapter 26</x:String>
+                                <x:String>Chapter 27</x:String>
+                                <x:String>Chapter 28</x:String>
+                                <x:String>Chapter 29</x:String>
+                                <x:String>Chapter 30</x:String>
+                                <x:String>Chapter 31</x:String>
+                                <x:String>Chapter 32</x:String>
+                                <x:String>Chapter 33</x:String>
+                                <x:String>Chapter 34</x:String>
+                                <x:String>Chapter 35</x:String>
+                                <x:String>Chapter 36</x:String>
+                                <x:String>Chapter 37</x:String>
+                                <x:String>Chapter 38</x:String>
+                                <x:String>Chapter 39</x:String>
+                                <x:String>Chapter 40</x:String>
+                                <x:String>Chapter 41</x:String>
+                                <x:String>Chapter 42</x:String>
+                                <x:String>Chapter 43</x:String>
+                                <x:String>Chapter 44</x:String>
+                                <x:String>Chapter 45</x:String>
+                                <x:String>Chapter 46</x:String>
+                                <x:String>Chapter 47</x:String>
+                                <x:String>Chapter 48</x:String>
+                                <x:String>Chapter 49</x:String>
+                                <x:String>Chapter 50</x:String>
+                                <x:String>Chapter 51</x:String>
+                                <x:String>Chapter 52</x:String>
+                            </GridView>
+                        </DataTemplate>
+                    </HubSection>
+                    <HubSection Header="Lamentations">
+                        <DataTemplate>
+                            <GridView IsItemClickEnabled="True" ItemClick="GridViewChapter_ItemClick" Tag="24">
+                                <GridView.ItemsPanel>
+                                    <ItemsPanelTemplate>
+                                        <WrapGrid Orientation="Horizontal" MaximumRowsOrColumns="25" />
+                                    </ItemsPanelTemplate>
+                                </GridView.ItemsPanel>
+                                <GridView.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding}" Width="100" Style="{ThemeResource BodyTextBlockStyle}" />
+                                    </DataTemplate>
+                                </GridView.ItemTemplate>
+                                <x:String>Chapter 1</x:String>
+                                <x:String>Chapter 2</x:String>
+                                <x:String>Chapter 3</x:String>
+                                <x:String>Chapter 4</x:String>
+                                <x:String>Chapter 5</x:String>
+                            </GridView>
+                        </DataTemplate>
+                    </HubSection>
+                    <HubSection Header="Ezekiel">
+                        <DataTemplate>
+                            <GridView IsItemClickEnabled="True" ItemClick="GridViewChapter_ItemClick" Tag="25">
+                                <GridView.ItemsPanel>
+                                    <ItemsPanelTemplate>
+                                        <WrapGrid Orientation="Horizontal" MaximumRowsOrColumns="25" />
+                                    </ItemsPanelTemplate>
+                                </GridView.ItemsPanel>
+                                <GridView.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding}" Width="100" Style="{ThemeResource BodyTextBlockStyle}" />
+                                    </DataTemplate>
+                                </GridView.ItemTemplate>
+                                <x:String>Chapter 1</x:String>
+                                <x:String>Chapter 2</x:String>
+                                <x:String>Chapter 3</x:String>
+                                <x:String>Chapter 4</x:String>
+                                <x:String>Chapter 5</x:String>
+                                <x:String>Chapter 6</x:String>
+                                <x:String>Chapter 7</x:String>
+                                <x:String>Chapter 8</x:String>
+                                <x:String>Chapter 9</x:String>
+                                <x:String>Chapter 10</x:String>
+                                <x:String>Chapter 11</x:String>
+                                <x:String>Chapter 12</x:String>
+                                <x:String>Chapter 13</x:String>
+                                <x:String>Chapter 14</x:String>
+                                <x:String>Chapter 15</x:String>
+                                <x:String>Chapter 16</x:String>
+                                <x:String>Chapter 17</x:String>
+                                <x:String>Chapter 18</x:String>
+                                <x:String>Chapter 19</x:String>
+                                <x:String>Chapter 20</x:String>
+                                <x:String>Chapter 21</x:String>
+                                <x:String>Chapter 22</x:String>
+                                <x:String>Chapter 23</x:String>
+                                <x:String>Chapter 24</x:String>
+                                <x:String>Chapter 25</x:String>
+                                <x:String>Chapter 26</x:String>
+                                <x:String>Chapter 27</x:String>
+                                <x:String>Chapter 28</x:String>
+                                <x:String>Chapter 29</x:String>
+                                <x:String>Chapter 30</x:String>
+                                <x:String>Chapter 31</x:String>
+                                <x:String>Chapter 32</x:String>
+                                <x:String>Chapter 33</x:String>
+                                <x:String>Chapter 34</x:String>
+                                <x:String>Chapter 35</x:String>
+                                <x:String>Chapter 36</x:String>
+                                <x:String>Chapter 37</x:String>
+                                <x:String>Chapter 38</x:String>
+                                <x:String>Chapter 39</x:String>
+                                <x:String>Chapter 40</x:String>
+                                <x:String>Chapter 41</x:String>
+                                <x:String>Chapter 42</x:String>
+                                <x:String>Chapter 43</x:String>
+                                <x:String>Chapter 44</x:String>
+                                <x:String>Chapter 45</x:String>
+                                <x:String>Chapter 46</x:String>
+                                <x:String>Chapter 47</x:String>
+                                <x:String>Chapter 48</x:String>
+                            </GridView>
+                        </DataTemplate>
+                    </HubSection>
+                    <HubSection Header="Daniel">
+                        <DataTemplate>
+                            <GridView IsItemClickEnabled="True" ItemClick="GridViewChapter_ItemClick" Tag="26">
+                                <GridView.ItemsPanel>
+                                    <ItemsPanelTemplate>
+                                        <WrapGrid Orientation="Horizontal" MaximumRowsOrColumns="25" />
+                                    </ItemsPanelTemplate>
+                                </GridView.ItemsPanel>
+                                <GridView.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding}" Width="100" Style="{ThemeResource BodyTextBlockStyle}" />
+                                    </DataTemplate>
+                                </GridView.ItemTemplate>
+                                <x:String>Chapter 1</x:String>
+                                <x:String>Chapter 2</x:String>
+                                <x:String>Chapter 3</x:String>
+                                <x:String>Chapter 4</x:String>
+                                <x:String>Chapter 5</x:String>
+                                <x:String>Chapter 6</x:String>
+                                <x:String>Chapter 7</x:String>
+                                <x:String>Chapter 8</x:String>
+                                <x:String>Chapter 9</x:String>
+                                <x:String>Chapter 10</x:String>
+                                <x:String>Chapter 11</x:String>
+                                <x:String>Chapter 12</x:String>
+                            </GridView>
+                        </DataTemplate>
+                    </HubSection>
+                    <HubSection Header="Hosea">
+                        <DataTemplate>
+                            <GridView IsItemClickEnabled="True" ItemClick="GridViewChapter_ItemClick" Tag="27">
+                                <GridView.ItemsPanel>
+                                    <ItemsPanelTemplate>
+                                        <WrapGrid Orientation="Horizontal" MaximumRowsOrColumns="25" />
+                                    </ItemsPanelTemplate>
+                                </GridView.ItemsPanel>
+                                <GridView.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding}" Width="100" Style="{ThemeResource BodyTextBlockStyle}" />
+                                    </DataTemplate>
+                                </GridView.ItemTemplate>
+                                <x:String>Chapter 1</x:String>
+                                <x:String>Chapter 2</x:String>
+                                <x:String>Chapter 3</x:String>
+                                <x:String>Chapter 4</x:String>
+                                <x:String>Chapter 5</x:String>
+                                <x:String>Chapter 6</x:String>
+                                <x:String>Chapter 7</x:String>
+                                <x:String>Chapter 8</x:String>
+                                <x:String>Chapter 9</x:String>
+                                <x:String>Chapter 10</x:String>
+                                <x:String>Chapter 11</x:String>
+                                <x:String>Chapter 12</x:String>
+                                <x:String>Chapter 13</x:String>
+                                <x:String>Chapter 14</x:String>
+                            </GridView>
+                        </DataTemplate>
+                    </HubSection>
+                    <HubSection Header="Joel">
+                        <DataTemplate>
+                            <GridView IsItemClickEnabled="True" ItemClick="GridViewChapter_ItemClick" Tag="28">
+                                <GridView.ItemsPanel>
+                                    <ItemsPanelTemplate>
+                                        <WrapGrid Orientation="Horizontal" MaximumRowsOrColumns="25" />
+                                    </ItemsPanelTemplate>
+                                </GridView.ItemsPanel>
+                                <GridView.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding}" Width="100" Style="{ThemeResource BodyTextBlockStyle}" />
+                                    </DataTemplate>
+                                </GridView.ItemTemplate>
+                                <x:String>Chapter 1</x:String>
+                                <x:String>Chapter 2</x:String>
+                                <x:String>Chapter 3</x:String>
+                            </GridView>
+                        </DataTemplate>
+                    </HubSection>
+                    <HubSection Header="Amos">
+                        <DataTemplate>
+                            <GridView IsItemClickEnabled="True" ItemClick="GridViewChapter_ItemClick" Tag="29">
+                                <GridView.ItemsPanel>
+                                    <ItemsPanelTemplate>
+                                        <WrapGrid Orientation="Horizontal" MaximumRowsOrColumns="25" />
+                                    </ItemsPanelTemplate>
+                                </GridView.ItemsPanel>
+                                <GridView.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding}" Width="100" Style="{ThemeResource BodyTextBlockStyle}" />
+                                    </DataTemplate>
+                                </GridView.ItemTemplate>
+                                <x:String>Chapter 1</x:String>
+                                <x:String>Chapter 2</x:String>
+                                <x:String>Chapter 3</x:String>
+                                <x:String>Chapter 4</x:String>
+                                <x:String>Chapter 5</x:String>
+                                <x:String>Chapter 6</x:String>
+                                <x:String>Chapter 7</x:String>
+                                <x:String>Chapter 8</x:String>
+                                <x:String>Chapter 9</x:String>
+                            </GridView>
+                        </DataTemplate>
+                    </HubSection>
+                    <HubSection Header="Obadiah">
+                        <DataTemplate>
+                            <GridView IsItemClickEnabled="True" ItemClick="GridViewChapter_ItemClick" Tag="30">
+                                <GridView.ItemsPanel>
+                                    <ItemsPanelTemplate>
+                                        <WrapGrid Orientation="Horizontal" MaximumRowsOrColumns="25" />
+                                    </ItemsPanelTemplate>
+                                </GridView.ItemsPanel>
+                                <GridView.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding}" Width="100" Style="{ThemeResource BodyTextBlockStyle}" />
+                                    </DataTemplate>
+                                </GridView.ItemTemplate>
+                                <x:String>Chapter 1</x:String>
+                            </GridView>
+                        </DataTemplate>
+                    </HubSection>
+                    <HubSection Header="Jonah">
+                        <DataTemplate>
+                            <GridView IsItemClickEnabled="True" ItemClick="GridViewChapter_ItemClick" Tag="31">
+                                <GridView.ItemsPanel>
+                                    <ItemsPanelTemplate>
+                                        <WrapGrid Orientation="Horizontal" MaximumRowsOrColumns="25" />
+                                    </ItemsPanelTemplate>
+                                </GridView.ItemsPanel>
+                                <GridView.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding}" Width="100" Style="{ThemeResource BodyTextBlockStyle}" />
+                                    </DataTemplate>
+                                </GridView.ItemTemplate>
+                                <x:String>Chapter 1</x:String>
+                                <x:String>Chapter 2</x:String>
+                                <x:String>Chapter 3</x:String>
+                                <x:String>Chapter 4</x:String>
+                            </GridView>
+                        </DataTemplate>
+                    </HubSection>
+                    <HubSection Header="Micah">
+                        <DataTemplate>
+                            <GridView IsItemClickEnabled="True" ItemClick="GridViewChapter_ItemClick" Tag="32">
+                                <GridView.ItemsPanel>
+                                    <ItemsPanelTemplate>
+                                        <WrapGrid Orientation="Horizontal" MaximumRowsOrColumns="25" />
+                                    </ItemsPanelTemplate>
+                                </GridView.ItemsPanel>
+                                <GridView.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding}" Width="100" Style="{ThemeResource BodyTextBlockStyle}" />
+                                    </DataTemplate>
+                                </GridView.ItemTemplate>
+                                <x:String>Chapter 1</x:String>
+                                <x:String>Chapter 2</x:String>
+                                <x:String>Chapter 3</x:String>
+                                <x:String>Chapter 4</x:String>
+                                <x:String>Chapter 5</x:String>
+                                <x:String>Chapter 6</x:String>
+                                <x:String>Chapter 7</x:String>
+                            </GridView>
+                        </DataTemplate>
+                    </HubSection>
+                    <HubSection Header="Nahum">
+                        <DataTemplate>
+                            <GridView IsItemClickEnabled="True" ItemClick="GridViewChapter_ItemClick" Tag="33">
+                                <GridView.ItemsPanel>
+                                    <ItemsPanelTemplate>
+                                        <WrapGrid Orientation="Horizontal" MaximumRowsOrColumns="25" />
+                                    </ItemsPanelTemplate>
+                                </GridView.ItemsPanel>
+                                <GridView.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding}" Width="100" Style="{ThemeResource BodyTextBlockStyle}" />
+                                    </DataTemplate>
+                                </GridView.ItemTemplate>
+                                <x:String>Chapter 1</x:String>
+                                <x:String>Chapter 2</x:String>
+                                <x:String>Chapter 3</x:String>
+                            </GridView>
+                        </DataTemplate>
+                    </HubSection>
+                    <HubSection Header="Habakkuk">
+                        <DataTemplate>
+                            <GridView IsItemClickEnabled="True" ItemClick="GridViewChapter_ItemClick" Tag="34">
+                                <GridView.ItemsPanel>
+                                    <ItemsPanelTemplate>
+                                        <WrapGrid Orientation="Horizontal" MaximumRowsOrColumns="25" />
+                                    </ItemsPanelTemplate>
+                                </GridView.ItemsPanel>
+                                <GridView.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding}" Width="100" Style="{ThemeResource BodyTextBlockStyle}" />
+                                    </DataTemplate>
+                                </GridView.ItemTemplate>
+                                <x:String>Chapter 1</x:String>
+                                <x:String>Chapter 2</x:String>
+                                <x:String>Chapter 3</x:String>
+                            </GridView>
+                        </DataTemplate>
+                    </HubSection>
+                    <HubSection Header="Zephaniah">
+                        <DataTemplate>
+                            <GridView IsItemClickEnabled="True" ItemClick="GridViewChapter_ItemClick" Tag="35">
+                                <GridView.ItemsPanel>
+                                    <ItemsPanelTemplate>
+                                        <WrapGrid Orientation="Horizontal" MaximumRowsOrColumns="25" />
+                                    </ItemsPanelTemplate>
+                                </GridView.ItemsPanel>
+                                <GridView.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding}" Width="100" Style="{ThemeResource BodyTextBlockStyle}" />
+                                    </DataTemplate>
+                                </GridView.ItemTemplate>
+                                <x:String>Chapter 1</x:String>
+                                <x:String>Chapter 2</x:String>
+                                <x:String>Chapter 3</x:String>
+                            </GridView>
+                        </DataTemplate>
+                    </HubSection>
+                    <HubSection Header="Haggai">
+                        <DataTemplate>
+                            <GridView IsItemClickEnabled="True" ItemClick="GridViewChapter_ItemClick" Tag="36">
+                                <GridView.ItemsPanel>
+                                    <ItemsPanelTemplate>
+                                        <WrapGrid Orientation="Horizontal" MaximumRowsOrColumns="25" />
+                                    </ItemsPanelTemplate>
+                                </GridView.ItemsPanel>
+                                <GridView.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding}" Width="100" Style="{ThemeResource BodyTextBlockStyle}" />
+                                    </DataTemplate>
+                                </GridView.ItemTemplate>
+                                <x:String>Chapter 1</x:String>
+                                <x:String>Chapter 2</x:String>
+                            </GridView>
+                        </DataTemplate>
+                    </HubSection>
+                    <HubSection Header="Zechariah">
+                        <DataTemplate>
+                            <GridView IsItemClickEnabled="True" ItemClick="GridViewChapter_ItemClick" Tag="37">
+                                <GridView.ItemsPanel>
+                                    <ItemsPanelTemplate>
+                                        <WrapGrid Orientation="Horizontal" MaximumRowsOrColumns="25" />
+                                    </ItemsPanelTemplate>
+                                </GridView.ItemsPanel>
+                                <GridView.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding}" Width="100" Style="{ThemeResource BodyTextBlockStyle}" />
+                                    </DataTemplate>
+                                </GridView.ItemTemplate>
+                                <x:String>Chapter 1</x:String>
+                                <x:String>Chapter 2</x:String>
+                                <x:String>Chapter 3</x:String>
+                                <x:String>Chapter 4</x:String>
+                                <x:String>Chapter 5</x:String>
+                                <x:String>Chapter 6</x:String>
+                                <x:String>Chapter 7</x:String>
+                                <x:String>Chapter 8</x:String>
+                                <x:String>Chapter 9</x:String>
+                                <x:String>Chapter 10</x:String>
+                                <x:String>Chapter 11</x:String>
+                                <x:String>Chapter 12</x:String>
+                                <x:String>Chapter 13</x:String>
+                                <x:String>Chapter 14</x:String>
+                            </GridView>
+                        </DataTemplate>
+                    </HubSection>
+                    <HubSection Header="Malachi">
+                        <DataTemplate>
+                            <GridView IsItemClickEnabled="True" ItemClick="GridViewChapter_ItemClick" Tag="38">
+                                <GridView.ItemsPanel>
+                                    <ItemsPanelTemplate>
+                                        <WrapGrid Orientation="Horizontal" MaximumRowsOrColumns="25" />
+                                    </ItemsPanelTemplate>
+                                </GridView.ItemsPanel>
+                                <GridView.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding}" Width="100" Style="{ThemeResource BodyTextBlockStyle}" />
+                                    </DataTemplate>
+                                </GridView.ItemTemplate>
+                                <x:String>Chapter 1</x:String>
+                                <x:String>Chapter 2</x:String>
+                                <x:String>Chapter 3</x:String>
+                                <x:String>Chapter 4</x:String>
+                            </GridView>
+                        </DataTemplate>
+                    </HubSection>
+                    <HubSection Header="Matthew">
+                        <DataTemplate>
+                            <GridView IsItemClickEnabled="True" ItemClick="GridViewChapter_ItemClick" Tag="39">
+                                <GridView.ItemsPanel>
+                                    <ItemsPanelTemplate>
+                                        <WrapGrid Orientation="Horizontal" MaximumRowsOrColumns="25" />
+                                    </ItemsPanelTemplate>
+                                </GridView.ItemsPanel>
+                                <GridView.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding}" Width="100" Style="{ThemeResource BodyTextBlockStyle}" />
+                                    </DataTemplate>
+                                </GridView.ItemTemplate>
+                                <x:String>Chapter 1</x:String>
+                                <x:String>Chapter 2</x:String>
+                                <x:String>Chapter 3</x:String>
+                                <x:String>Chapter 4</x:String>
+                                <x:String>Chapter 5</x:String>
+                                <x:String>Chapter 6</x:String>
+                                <x:String>Chapter 7</x:String>
+                                <x:String>Chapter 8</x:String>
+                                <x:String>Chapter 9</x:String>
+                                <x:String>Chapter 10</x:String>
+                                <x:String>Chapter 11</x:String>
+                                <x:String>Chapter 12</x:String>
+                                <x:String>Chapter 13</x:String>
+                                <x:String>Chapter 14</x:String>
+                                <x:String>Chapter 15</x:String>
+                                <x:String>Chapter 16</x:String>
+                                <x:String>Chapter 17</x:String>
+                                <x:String>Chapter 18</x:String>
+                                <x:String>Chapter 19</x:String>
+                                <x:String>Chapter 20</x:String>
+                                <x:String>Chapter 21</x:String>
+                                <x:String>Chapter 22</x:String>
+                                <x:String>Chapter 23</x:String>
+                                <x:String>Chapter 24</x:String>
+                                <x:String>Chapter 25</x:String>
+                                <x:String>Chapter 26</x:String>
+                                <x:String>Chapter 27</x:String>
+                                <x:String>Chapter 28</x:String>
+                            </GridView>
+                        </DataTemplate>
+                    </HubSection>
+                    <HubSection Header="Mark">
+                        <DataTemplate>
+                            <GridView IsItemClickEnabled="True" ItemClick="GridViewChapter_ItemClick" Tag="40">
+                                <GridView.ItemsPanel>
+                                    <ItemsPanelTemplate>
+                                        <WrapGrid Orientation="Horizontal" MaximumRowsOrColumns="25" />
+                                    </ItemsPanelTemplate>
+                                </GridView.ItemsPanel>
+                                <GridView.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding}" Width="100" Style="{ThemeResource BodyTextBlockStyle}" />
+                                    </DataTemplate>
+                                </GridView.ItemTemplate>
+                                <x:String>Chapter 1</x:String>
+                                <x:String>Chapter 2</x:String>
+                                <x:String>Chapter 3</x:String>
+                                <x:String>Chapter 4</x:String>
+                                <x:String>Chapter 5</x:String>
+                                <x:String>Chapter 6</x:String>
+                                <x:String>Chapter 7</x:String>
+                                <x:String>Chapter 8</x:String>
+                                <x:String>Chapter 9</x:String>
+                                <x:String>Chapter 10</x:String>
+                                <x:String>Chapter 11</x:String>
+                                <x:String>Chapter 12</x:String>
+                                <x:String>Chapter 13</x:String>
+                                <x:String>Chapter 14</x:String>
+                                <x:String>Chapter 15</x:String>
+                                <x:String>Chapter 16</x:String>
+                            </GridView>
+                        </DataTemplate>
+                    </HubSection>
+                    <HubSection Header="Luke">
+                        <DataTemplate>
+                            <GridView IsItemClickEnabled="True" ItemClick="GridViewChapter_ItemClick" Tag="41">
+                                <GridView.ItemsPanel>
+                                    <ItemsPanelTemplate>
+                                        <WrapGrid Orientation="Horizontal" MaximumRowsOrColumns="25" />
+                                    </ItemsPanelTemplate>
+                                </GridView.ItemsPanel>
+                                <GridView.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding}" Width="100" Style="{ThemeResource BodyTextBlockStyle}" />
+                                    </DataTemplate>
+                                </GridView.ItemTemplate>
+                                <x:String>Chapter 1</x:String>
+                                <x:String>Chapter 2</x:String>
+                                <x:String>Chapter 3</x:String>
+                                <x:String>Chapter 4</x:String>
+                                <x:String>Chapter 5</x:String>
+                                <x:String>Chapter 6</x:String>
+                                <x:String>Chapter 7</x:String>
+                                <x:String>Chapter 8</x:String>
+                                <x:String>Chapter 9</x:String>
+                                <x:String>Chapter 10</x:String>
+                                <x:String>Chapter 11</x:String>
+                                <x:String>Chapter 12</x:String>
+                                <x:String>Chapter 13</x:String>
+                                <x:String>Chapter 14</x:String>
+                                <x:String>Chapter 15</x:String>
+                                <x:String>Chapter 16</x:String>
+                                <x:String>Chapter 17</x:String>
+                                <x:String>Chapter 18</x:String>
+                                <x:String>Chapter 19</x:String>
+                                <x:String>Chapter 20</x:String>
+                                <x:String>Chapter 21</x:String>
+                                <x:String>Chapter 22</x:String>
+                                <x:String>Chapter 23</x:String>
+                                <x:String>Chapter 24</x:String>
+                            </GridView>
+                        </DataTemplate>
+                    </HubSection>
+                    <HubSection Header="John">
+                        <DataTemplate>
+                            <GridView IsItemClickEnabled="True" ItemClick="GridViewChapter_ItemClick" Tag="42">
+                                <GridView.ItemsPanel>
+                                    <ItemsPanelTemplate>
+                                        <WrapGrid Orientation="Horizontal" MaximumRowsOrColumns="25" />
+                                    </ItemsPanelTemplate>
+                                </GridView.ItemsPanel>
+                                <GridView.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding}" Width="100" Style="{ThemeResource BodyTextBlockStyle}" />
+                                    </DataTemplate>
+                                </GridView.ItemTemplate>
+                                <x:String>Chapter 1</x:String>
+                                <x:String>Chapter 2</x:String>
+                                <x:String>Chapter 3</x:String>
+                                <x:String>Chapter 4</x:String>
+                                <x:String>Chapter 5</x:String>
+                                <x:String>Chapter 6</x:String>
+                                <x:String>Chapter 7</x:String>
+                                <x:String>Chapter 8</x:String>
+                                <x:String>Chapter 9</x:String>
+                                <x:String>Chapter 10</x:String>
+                                <x:String>Chapter 11</x:String>
+                                <x:String>Chapter 12</x:String>
+                                <x:String>Chapter 13</x:String>
+                                <x:String>Chapter 14</x:String>
+                                <x:String>Chapter 15</x:String>
+                                <x:String>Chapter 16</x:String>
+                                <x:String>Chapter 17</x:String>
+                                <x:String>Chapter 18</x:String>
+                                <x:String>Chapter 19</x:String>
+                                <x:String>Chapter 20</x:String>
+                                <x:String>Chapter 21</x:String>
+                            </GridView>
+                        </DataTemplate>
+                    </HubSection>
+                    <HubSection Header="Acts">
+                        <DataTemplate>
+                            <GridView IsItemClickEnabled="True" ItemClick="GridViewChapter_ItemClick" Tag="43">
+                                <GridView.ItemsPanel>
+                                    <ItemsPanelTemplate>
+                                        <WrapGrid Orientation="Horizontal" MaximumRowsOrColumns="25" />
+                                    </ItemsPanelTemplate>
+                                </GridView.ItemsPanel>
+                                <GridView.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding}" Width="100" Style="{ThemeResource BodyTextBlockStyle}" />
+                                    </DataTemplate>
+                                </GridView.ItemTemplate>
+                                <x:String>Chapter 1</x:String>
+                                <x:String>Chapter 2</x:String>
+                                <x:String>Chapter 3</x:String>
+                                <x:String>Chapter 4</x:String>
+                                <x:String>Chapter 5</x:String>
+                                <x:String>Chapter 6</x:String>
+                                <x:String>Chapter 7</x:String>
+                                <x:String>Chapter 8</x:String>
+                                <x:String>Chapter 9</x:String>
+                                <x:String>Chapter 10</x:String>
+                                <x:String>Chapter 11</x:String>
+                                <x:String>Chapter 12</x:String>
+                                <x:String>Chapter 13</x:String>
+                                <x:String>Chapter 14</x:String>
+                                <x:String>Chapter 15</x:String>
+                                <x:String>Chapter 16</x:String>
+                                <x:String>Chapter 17</x:String>
+                                <x:String>Chapter 18</x:String>
+                                <x:String>Chapter 19</x:String>
+                                <x:String>Chapter 20</x:String>
+                                <x:String>Chapter 21</x:String>
+                                <x:String>Chapter 22</x:String>
+                                <x:String>Chapter 23</x:String>
+                                <x:String>Chapter 24</x:String>
+                                <x:String>Chapter 25</x:String>
+                                <x:String>Chapter 26</x:String>
+                                <x:String>Chapter 27</x:String>
+                                <x:String>Chapter 28</x:String>
+                            </GridView>
+                        </DataTemplate>
+                    </HubSection>
+                    <HubSection Header="Romans">
+                        <DataTemplate>
+                            <GridView IsItemClickEnabled="True" ItemClick="GridViewChapter_ItemClick" Tag="44">
+                                <GridView.ItemsPanel>
+                                    <ItemsPanelTemplate>
+                                        <WrapGrid Orientation="Horizontal" MaximumRowsOrColumns="25" />
+                                    </ItemsPanelTemplate>
+                                </GridView.ItemsPanel>
+                                <GridView.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding}" Width="100" Style="{ThemeResource BodyTextBlockStyle}" />
+                                    </DataTemplate>
+                                </GridView.ItemTemplate>
+                                <x:String>Chapter 1</x:String>
+                                <x:String>Chapter 2</x:String>
+                                <x:String>Chapter 3</x:String>
+                                <x:String>Chapter 4</x:String>
+                                <x:String>Chapter 5</x:String>
+                                <x:String>Chapter 6</x:String>
+                                <x:String>Chapter 7</x:String>
+                                <x:String>Chapter 8</x:String>
+                                <x:String>Chapter 9</x:String>
+                                <x:String>Chapter 10</x:String>
+                                <x:String>Chapter 11</x:String>
+                                <x:String>Chapter 12</x:String>
+                                <x:String>Chapter 13</x:String>
+                                <x:String>Chapter 14</x:String>
+                                <x:String>Chapter 15</x:String>
+                                <x:String>Chapter 16</x:String>
+                            </GridView>
+                        </DataTemplate>
+                    </HubSection>
+                    <HubSection Header="1 Corinthians">
+                        <DataTemplate>
+                            <GridView IsItemClickEnabled="True" ItemClick="GridViewChapter_ItemClick" Tag="45">
+                                <GridView.ItemsPanel>
+                                    <ItemsPanelTemplate>
+                                        <WrapGrid Orientation="Horizontal" MaximumRowsOrColumns="25" />
+                                    </ItemsPanelTemplate>
+                                </GridView.ItemsPanel>
+                                <GridView.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding}" Width="100" Style="{ThemeResource BodyTextBlockStyle}" />
+                                    </DataTemplate>
+                                </GridView.ItemTemplate>
+                                <x:String>Chapter 1</x:String>
+                                <x:String>Chapter 2</x:String>
+                                <x:String>Chapter 3</x:String>
+                                <x:String>Chapter 4</x:String>
+                                <x:String>Chapter 5</x:String>
+                                <x:String>Chapter 6</x:String>
+                                <x:String>Chapter 7</x:String>
+                                <x:String>Chapter 8</x:String>
+                                <x:String>Chapter 9</x:String>
+                                <x:String>Chapter 10</x:String>
+                                <x:String>Chapter 11</x:String>
+                                <x:String>Chapter 12</x:String>
+                                <x:String>Chapter 13</x:String>
+                                <x:String>Chapter 14</x:String>
+                                <x:String>Chapter 15</x:String>
+                                <x:String>Chapter 16</x:String>
+                            </GridView>
+                        </DataTemplate>
+                    </HubSection>
+                    <HubSection Header="2 Corinthians">
+                        <DataTemplate>
+                            <GridView IsItemClickEnabled="True" ItemClick="GridViewChapter_ItemClick" Tag="46">
+                                <GridView.ItemsPanel>
+                                    <ItemsPanelTemplate>
+                                        <WrapGrid Orientation="Horizontal" MaximumRowsOrColumns="25" />
+                                    </ItemsPanelTemplate>
+                                </GridView.ItemsPanel>
+                                <GridView.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding}" Width="100" Style="{ThemeResource BodyTextBlockStyle}" />
+                                    </DataTemplate>
+                                </GridView.ItemTemplate>
+                                <x:String>Chapter 1</x:String>
+                                <x:String>Chapter 2</x:String>
+                                <x:String>Chapter 3</x:String>
+                                <x:String>Chapter 4</x:String>
+                                <x:String>Chapter 5</x:String>
+                                <x:String>Chapter 6</x:String>
+                                <x:String>Chapter 7</x:String>
+                                <x:String>Chapter 8</x:String>
+                                <x:String>Chapter 9</x:String>
+                                <x:String>Chapter 10</x:String>
+                                <x:String>Chapter 11</x:String>
+                                <x:String>Chapter 12</x:String>
+                                <x:String>Chapter 13</x:String>
+                            </GridView>
+                        </DataTemplate>
+                    </HubSection>
+                    <HubSection Header="Galatians">
+                        <DataTemplate>
+                            <GridView IsItemClickEnabled="True" ItemClick="GridViewChapter_ItemClick" Tag="47">
+                                <GridView.ItemsPanel>
+                                    <ItemsPanelTemplate>
+                                        <WrapGrid Orientation="Horizontal" MaximumRowsOrColumns="25" />
+                                    </ItemsPanelTemplate>
+                                </GridView.ItemsPanel>
+                                <GridView.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding}" Width="100" Style="{ThemeResource BodyTextBlockStyle}" />
+                                    </DataTemplate>
+                                </GridView.ItemTemplate>
+                                <x:String>Chapter 1</x:String>
+                                <x:String>Chapter 2</x:String>
+                                <x:String>Chapter 3</x:String>
+                                <x:String>Chapter 4</x:String>
+                                <x:String>Chapter 5</x:String>
+                                <x:String>Chapter 6</x:String>
+                            </GridView>
+                        </DataTemplate>
+                    </HubSection>
+                    <HubSection Header="Ephesians">
+                        <DataTemplate>
+                            <GridView IsItemClickEnabled="True" ItemClick="GridViewChapter_ItemClick" Tag="48">
+                                <GridView.ItemsPanel>
+                                    <ItemsPanelTemplate>
+                                        <WrapGrid Orientation="Horizontal" MaximumRowsOrColumns="25" />
+                                    </ItemsPanelTemplate>
+                                </GridView.ItemsPanel>
+                                <GridView.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding}" Width="100" Style="{ThemeResource BodyTextBlockStyle}" />
+                                    </DataTemplate>
+                                </GridView.ItemTemplate>
+                                <x:String>Chapter 1</x:String>
+                                <x:String>Chapter 2</x:String>
+                                <x:String>Chapter 3</x:String>
+                                <x:String>Chapter 4</x:String>
+                                <x:String>Chapter 5</x:String>
+                                <x:String>Chapter 6</x:String>
+                            </GridView>
+                        </DataTemplate>
+                    </HubSection>
+                    <HubSection Header="Philippians">
+                        <DataTemplate>
+                            <GridView IsItemClickEnabled="True" ItemClick="GridViewChapter_ItemClick" Tag="49">
+                                <GridView.ItemsPanel>
+                                    <ItemsPanelTemplate>
+                                        <WrapGrid Orientation="Horizontal" MaximumRowsOrColumns="25" />
+                                    </ItemsPanelTemplate>
+                                </GridView.ItemsPanel>
+                                <GridView.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding}" Width="100" Style="{ThemeResource BodyTextBlockStyle}" />
+                                    </DataTemplate>
+                                </GridView.ItemTemplate>
+                                <x:String>Chapter 1</x:String>
+                                <x:String>Chapter 2</x:String>
+                                <x:String>Chapter 3</x:String>
+                                <x:String>Chapter 4</x:String>
+                            </GridView>
+                        </DataTemplate>
+                    </HubSection>
+                    <HubSection Header="Colossians">
+                        <DataTemplate>
+                            <GridView IsItemClickEnabled="True" ItemClick="GridViewChapter_ItemClick" Tag="50">
+                                <GridView.ItemsPanel>
+                                    <ItemsPanelTemplate>
+                                        <WrapGrid Orientation="Horizontal" MaximumRowsOrColumns="25" />
+                                    </ItemsPanelTemplate>
+                                </GridView.ItemsPanel>
+                                <GridView.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding}" Width="100" Style="{ThemeResource BodyTextBlockStyle}" />
+                                    </DataTemplate>
+                                </GridView.ItemTemplate>
+                                <x:String>Chapter 1</x:String>
+                                <x:String>Chapter 2</x:String>
+                                <x:String>Chapter 3</x:String>
+                                <x:String>Chapter 4</x:String>
+                            </GridView>
+                        </DataTemplate>
+                    </HubSection>
+                    <HubSection Header="1 Thessalonians">
+                        <DataTemplate>
+                            <GridView IsItemClickEnabled="True" ItemClick="GridViewChapter_ItemClick" Tag="51">
+                                <GridView.ItemsPanel>
+                                    <ItemsPanelTemplate>
+                                        <WrapGrid Orientation="Horizontal" MaximumRowsOrColumns="25" />
+                                    </ItemsPanelTemplate>
+                                </GridView.ItemsPanel>
+                                <GridView.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding}" Width="100" Style="{ThemeResource BodyTextBlockStyle}" />
+                                    </DataTemplate>
+                                </GridView.ItemTemplate>
+                                <x:String>Chapter 1</x:String>
+                                <x:String>Chapter 2</x:String>
+                                <x:String>Chapter 3</x:String>
+                                <x:String>Chapter 4</x:String>
+                                <x:String>Chapter 5</x:String>
+                            </GridView>
+                        </DataTemplate>
+                    </HubSection>
+                    <HubSection Header="2 Thessalonians">
+                        <DataTemplate>
+                            <GridView IsItemClickEnabled="True" ItemClick="GridViewChapter_ItemClick" Tag="52">
+                                <GridView.ItemsPanel>
+                                    <ItemsPanelTemplate>
+                                        <WrapGrid Orientation="Horizontal" MaximumRowsOrColumns="25" />
+                                    </ItemsPanelTemplate>
+                                </GridView.ItemsPanel>
+                                <GridView.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding}" Width="100" Style="{ThemeResource BodyTextBlockStyle}" />
+                                    </DataTemplate>
+                                </GridView.ItemTemplate>
+                                <x:String>Chapter 1</x:String>
+                                <x:String>Chapter 2</x:String>
+                                <x:String>Chapter 3</x:String>
+                            </GridView>
+                        </DataTemplate>
+                    </HubSection>
+                    <HubSection Header="1 Timothy">
+                        <DataTemplate>
+                            <GridView IsItemClickEnabled="True" ItemClick="GridViewChapter_ItemClick" Tag="53">
+                                <GridView.ItemsPanel>
+                                    <ItemsPanelTemplate>
+                                        <WrapGrid Orientation="Horizontal" MaximumRowsOrColumns="25" />
+                                    </ItemsPanelTemplate>
+                                </GridView.ItemsPanel>
+                                <GridView.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding}" Width="100" Style="{ThemeResource BodyTextBlockStyle}" />
+                                    </DataTemplate>
+                                </GridView.ItemTemplate>
+                                <x:String>Chapter 1</x:String>
+                                <x:String>Chapter 2</x:String>
+                                <x:String>Chapter 3</x:String>
+                                <x:String>Chapter 4</x:String>
+                                <x:String>Chapter 5</x:String>
+                                <x:String>Chapter 6</x:String>
+                            </GridView>
+                        </DataTemplate>
+                    </HubSection>
+                    <HubSection Header="2 Timothy">
+                        <DataTemplate>
+                            <GridView IsItemClickEnabled="True" ItemClick="GridViewChapter_ItemClick" Tag="54">
+                                <GridView.ItemsPanel>
+                                    <ItemsPanelTemplate>
+                                        <WrapGrid Orientation="Horizontal" MaximumRowsOrColumns="25" />
+                                    </ItemsPanelTemplate>
+                                </GridView.ItemsPanel>
+                                <GridView.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding}" Width="100" Style="{ThemeResource BodyTextBlockStyle}" />
+                                    </DataTemplate>
+                                </GridView.ItemTemplate>
+                                <x:String>Chapter 1</x:String>
+                                <x:String>Chapter 2</x:String>
+                                <x:String>Chapter 3</x:String>
+                                <x:String>Chapter 4</x:String>
+                            </GridView>
+                        </DataTemplate>
+                    </HubSection>
+                    <HubSection Header="Titus">
+                        <DataTemplate>
+                            <GridView IsItemClickEnabled="True" ItemClick="GridViewChapter_ItemClick" Tag="55">
+                                <GridView.ItemsPanel>
+                                    <ItemsPanelTemplate>
+                                        <WrapGrid Orientation="Horizontal" MaximumRowsOrColumns="25" />
+                                    </ItemsPanelTemplate>
+                                </GridView.ItemsPanel>
+                                <GridView.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding}" Width="100" Style="{ThemeResource BodyTextBlockStyle}" />
+                                    </DataTemplate>
+                                </GridView.ItemTemplate>
+                                <x:String>Chapter 1</x:String>
+                                <x:String>Chapter 2</x:String>
+                                <x:String>Chapter 3</x:String>
+                            </GridView>
+                        </DataTemplate>
+                    </HubSection>
+                    <HubSection Header="Philemon">
+                        <DataTemplate>
+                            <GridView IsItemClickEnabled="True" ItemClick="GridViewChapter_ItemClick" Tag="56">
+                                <GridView.ItemsPanel>
+                                    <ItemsPanelTemplate>
+                                        <WrapGrid Orientation="Horizontal" MaximumRowsOrColumns="25" />
+                                    </ItemsPanelTemplate>
+                                </GridView.ItemsPanel>
+                                <GridView.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding}" Width="100" Style="{ThemeResource BodyTextBlockStyle}" />
+                                    </DataTemplate>
+                                </GridView.ItemTemplate>
+                                <x:String>Chapter 1</x:String>
+                            </GridView>
+                        </DataTemplate>
+                    </HubSection>
+                    <HubSection Header="Hebrews">
+                        <DataTemplate>
+                            <GridView IsItemClickEnabled="True" ItemClick="GridViewChapter_ItemClick" Tag="57">
+                                <GridView.ItemsPanel>
+                                    <ItemsPanelTemplate>
+                                        <WrapGrid Orientation="Horizontal" MaximumRowsOrColumns="25" />
+                                    </ItemsPanelTemplate>
+                                </GridView.ItemsPanel>
+                                <GridView.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding}" Width="100" Style="{ThemeResource BodyTextBlockStyle}" />
+                                    </DataTemplate>
+                                </GridView.ItemTemplate>
+                                <x:String>Chapter 1</x:String>
+                                <x:String>Chapter 2</x:String>
+                                <x:String>Chapter 3</x:String>
+                                <x:String>Chapter 4</x:String>
+                                <x:String>Chapter 5</x:String>
+                                <x:String>Chapter 6</x:String>
+                                <x:String>Chapter 7</x:String>
+                                <x:String>Chapter 8</x:String>
+                                <x:String>Chapter 9</x:String>
+                                <x:String>Chapter 10</x:String>
+                                <x:String>Chapter 11</x:String>
+                                <x:String>Chapter 12</x:String>
+                                <x:String>Chapter 13</x:String>
+                            </GridView>
+                        </DataTemplate>
+                    </HubSection>
+                    <HubSection Header="James">
+                        <DataTemplate>
+                            <GridView IsItemClickEnabled="True" ItemClick="GridViewChapter_ItemClick" Tag="58">
+                                <GridView.ItemsPanel>
+                                    <ItemsPanelTemplate>
+                                        <WrapGrid Orientation="Horizontal" MaximumRowsOrColumns="25" />
+                                    </ItemsPanelTemplate>
+                                </GridView.ItemsPanel>
+                                <GridView.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding}" Width="100" Style="{ThemeResource BodyTextBlockStyle}" />
+                                    </DataTemplate>
+                                </GridView.ItemTemplate>
+                                <x:String>Chapter 1</x:String>
+                                <x:String>Chapter 2</x:String>
+                                <x:String>Chapter 3</x:String>
+                                <x:String>Chapter 4</x:String>
+                                <x:String>Chapter 5</x:String>
+                            </GridView>
+                        </DataTemplate>
+                    </HubSection>
+                    <HubSection Header="1 Peter">
+                        <DataTemplate>
+                            <GridView IsItemClickEnabled="True" ItemClick="GridViewChapter_ItemClick" Tag="59">
+                                <GridView.ItemsPanel>
+                                    <ItemsPanelTemplate>
+                                        <WrapGrid Orientation="Horizontal" MaximumRowsOrColumns="25" />
+                                    </ItemsPanelTemplate>
+                                </GridView.ItemsPanel>
+                                <GridView.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding}" Width="100" Style="{ThemeResource BodyTextBlockStyle}" />
+                                    </DataTemplate>
+                                </GridView.ItemTemplate>
+                                <x:String>Chapter 1</x:String>
+                                <x:String>Chapter 2</x:String>
+                                <x:String>Chapter 3</x:String>
+                                <x:String>Chapter 4</x:String>
+                                <x:String>Chapter 5</x:String>
+                            </GridView>
+                        </DataTemplate>
+                    </HubSection>
+                    <HubSection Header="2 Peter">
+                        <DataTemplate>
+                            <GridView IsItemClickEnabled="True" ItemClick="GridViewChapter_ItemClick" Tag="60">
+                                <GridView.ItemsPanel>
+                                    <ItemsPanelTemplate>
+                                        <WrapGrid Orientation="Horizontal" MaximumRowsOrColumns="25" />
+                                    </ItemsPanelTemplate>
+                                </GridView.ItemsPanel>
+                                <GridView.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding}" Width="100" Style="{ThemeResource BodyTextBlockStyle}" />
+                                    </DataTemplate>
+                                </GridView.ItemTemplate>
+                                <x:String>Chapter 1</x:String>
+                                <x:String>Chapter 2</x:String>
+                                <x:String>Chapter 3</x:String>
+                            </GridView>
+                        </DataTemplate>
+                    </HubSection>
+                    <HubSection Header="1 John">
+                        <DataTemplate>
+                            <GridView IsItemClickEnabled="True" ItemClick="GridViewChapter_ItemClick" Tag="61">
+                                <GridView.ItemsPanel>
+                                    <ItemsPanelTemplate>
+                                        <WrapGrid Orientation="Horizontal" MaximumRowsOrColumns="25" />
+                                    </ItemsPanelTemplate>
+                                </GridView.ItemsPanel>
+                                <GridView.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding}" Width="100" Style="{ThemeResource BodyTextBlockStyle}" />
+                                    </DataTemplate>
+                                </GridView.ItemTemplate>
+                                <x:String>Chapter 1</x:String>
+                                <x:String>Chapter 2</x:String>
+                                <x:String>Chapter 3</x:String>
+                                <x:String>Chapter 4</x:String>
+                                <x:String>Chapter 5</x:String>
+                            </GridView>
+                        </DataTemplate>
+                    </HubSection>
+                    <HubSection Header="2 John">
+                        <DataTemplate>
+                            <GridView IsItemClickEnabled="True" ItemClick="GridViewChapter_ItemClick" Tag="62">
+                                <GridView.ItemsPanel>
+                                    <ItemsPanelTemplate>
+                                        <WrapGrid Orientation="Horizontal" MaximumRowsOrColumns="25" />
+                                    </ItemsPanelTemplate>
+                                </GridView.ItemsPanel>
+                                <GridView.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding}" Width="100" Style="{ThemeResource BodyTextBlockStyle}" />
+                                    </DataTemplate>
+                                </GridView.ItemTemplate>
+                                <x:String>Chapter 1</x:String>
+                            </GridView>
+                        </DataTemplate>
+                    </HubSection>
+                    <HubSection Header="3 John">
+                        <DataTemplate>
+                            <GridView IsItemClickEnabled="True" ItemClick="GridViewChapter_ItemClick" Tag="63">
+                                <GridView.ItemsPanel>
+                                    <ItemsPanelTemplate>
+                                        <WrapGrid Orientation="Horizontal" MaximumRowsOrColumns="25" />
+                                    </ItemsPanelTemplate>
+                                </GridView.ItemsPanel>
+                                <GridView.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding}" Width="100" Style="{ThemeResource BodyTextBlockStyle}" />
+                                    </DataTemplate>
+                                </GridView.ItemTemplate>
+                                <x:String>Chapter 1</x:String>
+                            </GridView>
+                        </DataTemplate>
+                    </HubSection>
+                    <HubSection Header="Jude">
+                        <DataTemplate>
+                            <GridView IsItemClickEnabled="True" ItemClick="GridViewChapter_ItemClick" Tag="64">
+                                <GridView.ItemsPanel>
+                                    <ItemsPanelTemplate>
+                                        <WrapGrid Orientation="Horizontal" MaximumRowsOrColumns="25" />
+                                    </ItemsPanelTemplate>
+                                </GridView.ItemsPanel>
+                                <GridView.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding}" Width="100" Style="{ThemeResource BodyTextBlockStyle}" />
+                                    </DataTemplate>
+                                </GridView.ItemTemplate>
+                                <x:String>Chapter 1</x:String>
+                            </GridView>
+                        </DataTemplate>
+                    </HubSection>
+                    <HubSection Header="Revelation">
+                        <DataTemplate>
+                            <GridView IsItemClickEnabled="True" ItemClick="GridViewChapter_ItemClick" Tag="65">
+                                <GridView.ItemsPanel>
+                                    <ItemsPanelTemplate>
+                                        <WrapGrid Orientation="Horizontal" MaximumRowsOrColumns="25" />
+                                    </ItemsPanelTemplate>
+                                </GridView.ItemsPanel>
+                                <GridView.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding}" Width="100" Style="{ThemeResource BodyTextBlockStyle}" />
+                                    </DataTemplate>
+                                </GridView.ItemTemplate>
+                                <x:String>Chapter 1</x:String>
+                                <x:String>Chapter 2</x:String>
+                                <x:String>Chapter 3</x:String>
+                                <x:String>Chapter 4</x:String>
+                                <x:String>Chapter 5</x:String>
+                                <x:String>Chapter 6</x:String>
+                                <x:String>Chapter 7</x:String>
+                                <x:String>Chapter 8</x:String>
+                                <x:String>Chapter 9</x:String>
+                                <x:String>Chapter 10</x:String>
+                                <x:String>Chapter 11</x:String>
+                                <x:String>Chapter 12</x:String>
+                                <x:String>Chapter 13</x:String>
+                                <x:String>Chapter 14</x:String>
+                                <x:String>Chapter 15</x:String>
+                                <x:String>Chapter 16</x:String>
+                                <x:String>Chapter 17</x:String>
+                                <x:String>Chapter 18</x:String>
+                                <x:String>Chapter 19</x:String>
+                                <x:String>Chapter 20</x:String>
+                                <x:String>Chapter 21</x:String>
+                                <x:String>Chapter 22</x:String>
+                            </GridView>
+                        </DataTemplate>
+                    </HubSection>
+                </Hub>
+            </SemanticZoom.ZoomedInView>
+            <SemanticZoom.ZoomedOutView>
+                <Hub Name="MainHub" Orientation="Vertical">
+                    <Hub.Header>
+                        <Grid>
+                            <TextBlock Name="BooksTitle" Text="Audio Bible" Style="{StaticResource HeaderTextBlockStyle}" LineStackingStrategy="BlockLineHeight" LineHeight="50" />
+                        </Grid>
+                    </Hub.Header>
+                    <HubSection Header="Old Testament">
+                        <DataTemplate>
+                            <GridView IsItemClickEnabled="True" ItemClick="GridView_ItemClick" Tag="0">
+                                <GridView.ItemsPanel>
+                                    <ItemsPanelTemplate>
+                                        <WrapGrid Orientation="Horizontal" MaximumRowsOrColumns="20" />
+                                    </ItemsPanelTemplate>
+                                </GridView.ItemsPanel>
+                                <GridView.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding}" Width="150" Style="{ThemeResource BodyTextBlockStyle}" />
+                                    </DataTemplate>
+                                </GridView.ItemTemplate>
+                                <x:String>Genesis</x:String>
+                                <x:String>Exodus</x:String>
+                                <x:String>Leviticus</x:String>
+                                <x:String>Numbers</x:String>
+                                <x:String>Deuteronomy</x:String>
+                                <x:String>Joshua</x:String>
+                                <x:String>Judges</x:String>
+                                <x:String>Ruth</x:String>
+                                <x:String>1 Samuel</x:String>
+                                <x:String>2 Samuel</x:String>
+                                <x:String>1 Kings</x:String>
+                                <x:String>2 Kings</x:String>
+                                <x:String>1 Chronicles</x:String>
+                                <x:String>2 Chronicles</x:String>
+                                <x:String>Ezra</x:String>
+                                <x:String>Nehemiah</x:String>
+                                <x:String>Esther</x:String>
+                                <x:String>Job</x:String>
+                                <x:String>Psalm</x:String>
+                                <x:String>Proverbs</x:String>
+                                <x:String>Ecclesiastes</x:String>
+                                <x:String>Song of Solomon</x:String>
+                                <x:String>Isaiah</x:String>
+                                <x:String>Jeremiah</x:String>
+                                <x:String>Lamentations</x:String>
+                                <x:String>Ezekiel</x:String>
+                                <x:String>Daniel</x:String>
+                                <x:String>Hosea</x:String>
+                                <x:String>Joel</x:String>
+                                <x:String>Amos</x:String>
+                                <x:String>Obadiah</x:String>
+                                <x:String>Jonah</x:String>
+                                <x:String>Micah</x:String>
+                                <x:String>Nahum</x:String>
+                                <x:String>Habakkuk</x:String>
+                                <x:String>Zephaniah</x:String>
+                                <x:String>Haggai</x:String>
+                                <x:String>Zechariah</x:String>
+                                <x:String>Malachi</x:String>
+                            </GridView>
+                        </DataTemplate>
+                    </HubSection>
+                    <HubSection Header="New Testament">
+                        <DataTemplate>
+                            <GridView IsItemClickEnabled="True" ItemClick="GridView_ItemClick" Tag="1">
+                                <GridView.ItemsPanel>
+                                    <ItemsPanelTemplate>
+                                        <WrapGrid Orientation="Horizontal" MaximumRowsOrColumns="20" />
+                                    </ItemsPanelTemplate>
+                                </GridView.ItemsPanel>
+                                <GridView.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding}" Width="150" Style="{ThemeResource BodyTextBlockStyle}" />
+                                    </DataTemplate>
+                                </GridView.ItemTemplate>
+                                <x:String>Matthew</x:String>
+                                <x:String>Mark</x:String>
+                                <x:String>Luke</x:String>
+                                <x:String>John</x:String>
+                                <x:String>Acts</x:String>
+                                <x:String>Romans</x:String>
+                                <x:String>1 Corinthians</x:String>
+                                <x:String>2 Corinthians</x:String>
+                                <x:String>Galatians</x:String>
+                                <x:String>Ephesians</x:String>
+                                <x:String>Philippians</x:String>
+                                <x:String>Colossians</x:String>
+                                <x:String>1 Thessalonians</x:String>
+                                <x:String>2 Thessalonians</x:String>
+                                <x:String>1 Timothy</x:String>
+                                <x:String>2 Timothy</x:String>
+                                <x:String>Titus</x:String>
+                                <x:String>Philemon</x:String>
+                                <x:String>Hebrews</x:String>
+                                <x:String>James</x:String>
+                                <x:String>1 Peter</x:String>
+                                <x:String>2 Peter</x:String>
+                                <x:String>1 John</x:String>
+                                <x:String>2 John</x:String>
+                                <x:String>3 John</x:String>
+                                <x:String>Jude</x:String>
+                                <x:String>Revelation</x:String>
+                            </GridView>
+                        </DataTemplate>
+                    </HubSection>
+                </Hub>
+            </SemanticZoom.ZoomedOutView>
+        </SemanticZoom>
+    </Grid>
+    <Page.BottomAppBar>
+        <AppBar IsOpen="True" IsSticky="True" HorizontalContentAlignment="Center" Height="90">
+            <StackPanel Orientation="Horizontal">
+                <AppBarButton Name="Previous" Label="Previous" Icon="Previous" Click="AppBarButton_Click" />
+                <AppBarButton Name="Play" Label="Play" Icon="Play" Click="AppBarButton_Click" />
+                <AppBarButton Name="Next" Label="Next" Icon="Next" Click="AppBarButton_Click" />
+            </StackPanel>
+        </AppBar>
+    </Page.BottomAppBar>
+</Page>
